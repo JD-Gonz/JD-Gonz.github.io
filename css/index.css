@@ -35,7 +35,7 @@ body {
   color: #fff;
   padding-top: 150px;
   text-align: center;
-  background: url('../img/background/seattle.jpg');
+  background: url(../img/background/seattle.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -53,7 +53,7 @@ hr.sexy-line {
 
 .about-container {
   color: #fff;
-  background: url('../img/background/matrix.jpg');
+  background: url(../img/background/matrix.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -93,7 +93,7 @@ hr.sexy-line {
   color: #fff;
   padding-top: 60px;
   font-family: 'Chewy', cursive;
-  background: url('../img/background/woodroom.jpg');
+  background: url(../img/background/woodroom.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -131,7 +131,7 @@ hr.sexy-line {
 .contact-container {
   padding-top: 125px;
   font-family: 'Comfortaa', cursive;
-  background: url('../img/background/city.jpg');
+  background: url(../img/background/city.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
