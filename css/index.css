@@ -35,7 +35,7 @@ body {
   color: #fff;
   padding-top: 150px;
   text-align: center;
-  background: url('http://images1.fanpop.com/images/photos/2200000/Seattle-Wallpaper-seattle-2232425-1024-768.jpg');
+  background: url('../img/background/seattle.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -53,7 +53,7 @@ hr.sexy-line {
 
 .about-container {
   color: #fff;
-  background: url('http://il9.picdn.net/shutterstock/videos/13235759/thumb/1.jpg');
+  background: url('../img/background/matrix.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -93,7 +93,7 @@ hr.sexy-line {
   color: #fff;
   padding-top: 60px;
   font-family: 'Chewy', cursive;
-  background: url('http://img12.deviantart.net/849e/i/2011/028/8/9/_____wood_room______by_xbartenderx-d387w0e.jpg');
+  background: url('../img/background/woodroom.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -131,7 +131,7 @@ hr.sexy-line {
 .contact-container {
   padding-top: 125px;
   font-family: 'Comfortaa', cursive;
-  background: url('http://s15.postimg.org/ufowjn4a3/q2_NOrf_M.jpg');
+  background: url('../img/background/city.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
