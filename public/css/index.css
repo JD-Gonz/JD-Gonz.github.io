@@ -125,8 +125,16 @@ hr.sexy-line {
 }
 
 .portfolio-project {
-    padding: 10px;
-  }
+  padding: 10px;
+}
+  
+.nav-tabs a {
+  color: white;
+}
+
+.nav-tabs a:hover {
+  color: black;
+}
 
 .contact-container {
   padding-top: 125px;
