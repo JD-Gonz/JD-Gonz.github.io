@@ -1,4 +1,4 @@
-/* global $ angular */
+/* global $ document angular */
 'use strict';
 
 var app = angular.module("PersonalWebsite",  []);
@@ -132,7 +132,79 @@ app.controller('HomeCtrl', ['$scope', function($scope) {
 }]);
 
 app.controller('PortfolioCtrl', ['$scope', function($scope) {
-  $scope.greeting = 'Hola!';
+  let brokenProjects = [{
+    'name' : 'Quote Machine',
+    'img' : 'img/projects/randomQuote.png',
+    'site' : 'https://codepen.io/jdg99/full/jqbOoV/'
+  }, {
+    'name' : 'Local Weather App',
+    'img' : 'img/projects/weather.png',
+    'site' : 'https://codepen.io/jdg99/full/oxbpJR/'
+  }, {
+    'name' : 'Twitch Streamer',
+    'img' : 'img/projects/twitch.png',
+    'site' : 'https://codepen.io/jdg99/full/mPmeLN/'
+  }];
+  
+  $scope.frontendProjects = [{
+    'name' : 'Tribute Project',
+    'img' : 'img/projects/tribute.png',
+    'site' : 'https://codepen.io/jdg99/full/JGVjPR/'
+  }, {
+    'name' : 'Wikipedia Viewer',
+    'img' : 'img/projects/wiki.png',
+    'site' : 'https://codepen.io/jdg99/full/qZNmoG/'
+  }, {
+    'name' : 'Digital Calculator',
+    'img' : 'img/projects/calculator.png',
+    'site' : 'https://codepen.io/jdg99/full/aNYojq/'
+  }, {
+    'name' : 'Pomodoro Clock',
+    'img' : 'img/projects/pomodoro.png',
+    'site' : 'https://codepen.io/jdg99/full/NNYodV/'
+  }, {
+    'name' : 'Tic-Tac-Toe',
+    'img' : 'img/projects/ticTacToe.png',
+    'site' : 'https://codepen.io/jdg99/full/MyZgMB/'
+  }, {
+    'name' : 'Simon Says',
+    'img' : 'img/projects/simon.png',
+    'site' : 'https://codepen.io/jdg99/full/BKeJvm/'
+  }];
+    
+  $scope.apis = [{
+    'name' : 'Timestamp Microservice',
+    'discription' : 'Passed a string as a parameter, it will check to see whether that string contains either a unix timestamp or a natural language date.',
+    'repo' : 'https://github.com/dgonz001/timestampApi',
+    'site' : 'https://jdg-timestamp.herokuapp.com/'
+  }, {
+    'name' : 'Request Header Parser Microservice',
+    'discription' : 'This Microservice eturns the IP address, language and operating system for the current browser.',
+    'repo' : 'https://github.com/dgonz001/headerParser',
+    'site' : 'https://jdg-header-parser.herokuapp.com/'
+  }, {
+    'name' : 'URL Shortener Microservice',
+    'discription' : 'Generates and returns a shortened URL.',
+    'repo' : 'https://github.com/dgonz001/urlShortener',
+    'site' : 'https://jdg-short.herokuapp.com/'
+  }, {
+    'name' : 'Image Search Abstraction Layer',
+    'discription' : 'An image search abstraction layer that allows a user to search for images and view the most recent searches.',
+    'repo' : 'https://github.com/dgonz001/imageSearch',
+    'site' : 'https://jdg-image.herokuapp.com/'
+  }, {
+    'name' : 'File Metadata Microservice',
+    'discription' : 'This microservice gives you the size (in bytes) of any formdata that you provide for upload.',
+    'repo' : 'https://github.com/dgonz001/fileMetadata',
+    'site' : 'https://jdg-metadata.herokuapp.com/'
+  }];
+    
+  $scope.webApps = [{
+    'name' : 'Voting App',
+    'discription' : 'Pollapalooza is an app that allows you to create, view, and vote on user made polls.',
+    'repo' : 'https://github.com/dgonz001/votingApp',
+    'site' : 'https://pollapalooza.herokuapp.com/'
+  }];
 }]);
 
 $(function() {
