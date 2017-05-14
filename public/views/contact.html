@@ -1,0 +1,40 @@
+<div class="row opacity">
+  <div class="col-sm-9">
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <h1 class="panel-title font-chewy text-center">{{resume.title}}</h1>
+      </div>
+      <div class="panel-body text-center">
+        <a href="views/Resume.pdf" class="btn btn-default btn-lg color-black">
+          <i ng-class="resume.class"></i> <span class="network-name">{{resume.content}}</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title font-chewy">{{email.title}}</h3>
+      </div>
+      <div class="panel-body">
+        <a href="MAILTO:dgonz001@uw.edu" target="_top">{{email.content}}</a>
+      </div>
+      <div class="panel-heading">
+        <h3 class="panel-title font-chewy">{{phone.title}}</h3>
+      </div>
+      <div class="panel-body">
+        <a href="tel:509-264-0988">{{phone.content}}</a>
+      </div>
+      <div class="panel-heading">
+        <h3 class="panel-title font-chewy">{{web.title}}</h3>
+      </div>
+      <div class="panel-body contact-block">
+        <ul class="list-inline social-buttons">
+          <li ng-repeat="media in web.content">
+            <a ng-href="{{media.href}}" target="_blank" class="btn btn-default contact-btn"><i ng-class="media.class"></i> <span class="network-name">{{media.name}}</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
