@@ -1,0 +1,33 @@
+<div class="row">
+  <div class="col-sm-7">
+    <div ng-repeat="info in infoList">
+      <div class="col-sm-12">
+        <h1>{{info.title}}</h1>
+      </div>
+      <div class="col-sm-11 col-md-offset-1 font-comfortaa well">
+        <p>{{info.content}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-5 text-center">
+    <div class="row">
+      <img class="img-responsive img-circle about-portrait" src="img/portrait.jpg" alt="Picture of JD" />
+    </div>
+    <div class="row about-padding">
+      <h2>{{skills.title}}</h2>
+    </div>
+    <div class="row well skill-block">
+      <div clas="skill-block well">
+        <ul class="list-inline skills-list" ng-repeat="row in skills.rows">
+          <li ng-repeat="skill in row">
+            <button class="btn btn-default skill-btn">
+              <img ng-if="skill.isImage" ng-src="{{skill.src}}" alt="{{skill.alt}}" />
+              <i ng-if="!skill.isImage" ng-class="skill.icon" />
+              <span class="skill-name"> {{skill.name}}</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en" ng-app="PersonalWebsite">
   <head>
     <meta charset="UTF-8" />
     <meta name="author" content="Jose Daniel Gonzalez">
@@ -13,362 +13,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Shadows+Into+Light|Pacifico|Chewy|Comfortaa'>
-    <link rel="stylesheet" type="text/css" href="public/css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     <title>Jose Daniel Gonzalez</title>
   </head>
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top font-comfortaa">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-          <a class="navbar-brand" href="https://www.freecodecamp.com/dgonz001" target="_blank">JD Gonzalez</a>
-        </div>
-        <div class="collapse navbar-collapse" id="navbar-collapse">
-          <ul class="nav navbar-nav navbar-right" role="navigation">
-            <li>
-              <a href="#home">Home</a>
-            </li>
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#portfolio">Portfolio</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <div ng-include src="'views/navBar.html'"></div>
     </nav>
   
     <a name="home"></a>
     <div class="container home-container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="header-text font-pacifico">
-            <span class="text-lg"><h1>Jose Daniel Gonzalez</h1></span>
-            <span class="text-sm"><h1>JD Gonzalez</h1></span>
-          </div>
-          <div class="col-sm-12 font-shadow">
-            <h3>Developer In Training</h3>
-            <hr class="sexy-line">
-          </div>
-          <ul class="list-inline social-buttons font-comfortaa">
-            <li>
-              <a href="https://twitter.com/danny_b0y03" target="_blank" class="btn btn-default btn-lg btn-success"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-            </li>
-            <li>
-              <a href="https://github.com/dgonz001" target="_blank" class="btn btn-default btn-lg btn-success"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/jdannygonzalez" target="_blank" class="btn btn-default btn-lg btn-success"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-            </li>
-            <li>
-              <a href="https://www.freecodecamp.com/dgonz001" target="_blank" class="btn btn-default btn-lg btn-success"><span class="glyphicon glyphicon-tent"></span> <span class="network-name">freeCodeCamp</span></a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <div ng-include src="'views/home.html'"></div>
     </div>
   
     <a name="about"></a>
     <div class="container about-container">
-      <div class="row">
-        <div class="col-sm-7 ">
-          <div class="col-sm-12">
-            <span class="text-lg"><h1>A Little About Me</h1></span>
-            <span class="text-sm"><h1>About Me</h1></span>
-          </div>
-          <div class="col-sm-11 col-md-offset-1 font-comfortaa well">
-            <p>
-              Hi, I'm Jose Daniel Gonzalez, but you can call me Danny or JD whichever you prefer. I am a graduate of the University of Washington. Currently, I am working as a Software Developer based in Seattle, WA.
-            </p>
-          </div>
-          <div class="col-sm-12">
-            <h2>Background</h2>
-          </div>
-          <div class="col-sm-11 col-md-offset-1 font-comfortaa well">
-            <p>
-              I grew up in a small town in central Washington, and have been living in Seattle for about seven years now. I came to Seattle in pursuit of higher education at the University of Washington, where I earned a degree in Informatics with a focus in Information Assurance and Cybersecurity. During my time at the University of Washington, I also worked for PEMCO Insurance on a three-month summer internship and Informion as a Software Developer part-time.
-            </p>
-          </div>
-          <div class="col-sm-12">
-            <h1>Developer In Training?</h1>
-          </div>
-          <div class="col-sm-11 col-md-offset-1 font-comfortaa well">
-            <p>
-              I thought that the tag-line “Developer in Training” was a rather quaint one to use while studying in college. It also sounded like it would be an appropriate phrase while I was still being mentored. I have quickly realized that software developers never really stop learning. We always have to “train” for the next big thing – or, better yet, invent it.
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-5 text-center">
-          <div class="row">
-            <img class="img-responsive img-circle about-portrait" src="public/img/portrait.jpg" alt="Picture of JD" />
-          </div>
-          <div class="row about-padding">
-            <h2>My Skills Include</h2>
-          </div>
-          <div class="row well skill-block">
-            <div clas="skill-block well">
-              <ul class="list-inline skills-list">
-                <li>
-                  <button class="btn btn-default skill-btn"><img src="public/img/icons/java.png" alt="Java icon" /><span class="skill-name"> Java</span></button>
-                </li>
-                <li>
-                  <button class="btn btn-default skill-btn"><img src="public/img/icons/javascript.png" alt="Javascript icon" /><span class="skill-name"> Javascript</span></button>
-                </li>
-                <li>
-                  <button class="btn btn-default skill-btn"><img src="https://s15.postimg.org/y6yh5yhyf/z6_JAz_YU.png" alt="Node icon" /><span class="skill-name"> Node.js</span></button>
-                </li>
-              </ul>
-              <ul class="list-inline skills-list">
-                <li>
-                  <button class="btn btn-default skill-btn"><img src="public/img/icons/jquery.jpg" alt="jQuery icon" /><span class="skill-name"> jQuery</span></button>
-                </li>
-                <li>
-                  <button class="btn btn-default skill-btn"><img src="public/img/icons/angular.png" alt="AngularJS icon" /><span class="skill-name"> AngularJS</span></button>
-                </li>
-                <li>
-                  <button class="btn btn-default skill-btn"><i class="fa fa-css3 fa-fw"></i><span class="skill-name">CSS3</span></button>
-                </li>
-              </ul>
-              <ul class="list-inline skills-list">
-                <li>
-                  <button class="btn btn-default skill-btn"><i class="fa fa-html5 fa-fw"></i><span class="skill-name">HTML5</span></button>
-                </li>
-                <li>
-                  <button class="btn btn-default skill-btn"><i class="fa fa-database fa-fw"></i><span class="skill-name">SQL</span></button>
-                </li>
-                <li>
-                  <button class="btn btn-default skill-btn"><img src="public/img/icons/bootstrap.png" alt="Bootstrap icon" /><span class="skill-name"> Bootstrap</span></button>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div ng-include src="'views/about.html'" ng-controller="AboutCtrl"></div>
     </div>
   
     <a name="portfolio"></a>
     <div class="container portfolio-container skill-block text-center">
-      <img class="img-responsive center-block" src="public/img/header-portfo.png" alt="Portfolio Banner" />
-      <ul class="nav nav-tabs nav-justified">
-        <li class="active"><a href="#frontend" data-toggle="tab"><h2>Front-End Projects</h2></a></li>
-        <li><a href="#api" data-toggle="tab"><h2>Api Projects</h2></a></li>
-        <li ><a href="#webapp" data-toggle="tab"><h2>Web Application Projects</h2></a></li>
-      </ul>
-      <div class="tab-content clearfix">
-        <div class="tab-pane active" id="frontend">
-          <div class="col-sm-4 portfolio-project">
-            <a href="https://codepen.io/jdg99/full/JGVjPR/" target="_blank">
-              <img class="img-rounded" src="public/img/projects/tribute.png" alt="Tribute project" />
-              <div class="carousel-caption">
-                <h2>Tribute Project</h2>
-              </div>
-            </a>
-          </div>
-          <!--currently broken due to codePen.io CORS issues-->
-          <!--<div class="col-sm-4 portfolio-project">-->
-          <!--  <a href="https://codepen.io/jdg99/full/jqbOoV/" target="_blank">-->
-          <!--    <img class="img-rounded" src="public/img/projects/randomQuote.png" alt="Quote Machine" />-->
-          <!--    <div class="carousel-caption">-->
-          <!--      <h2>Quote Machine</h2>-->
-          <!--    </div>-->
-          <!--  </a>-->
-          <!--</div>-->
-          <!--<div class="col-sm-4 portfolio-project">-->
-          <!--  <a href="https://codepen.io/jdg99/full/oxbpJR/" target="_blank">-->
-          <!--    <img class="img-rounded" src="public/img/projects/weather.png" alt="Local Weather App" />-->
-          <!--    <div class="carousel-caption">-->
-          <!--      <h2>Local Weather</h2>-->
-          <!--    </div>-->
-          <!--  </a>-->
-          <!--</div>-->
-          <div class="col-sm-4 portfolio-project">
-            <a href="https://codepen.io/jdg99/full/qZNmoG/" target="_blank">
-              <img class="img-rounded" src="public/img/projects/wiki.png" alt="Wikipedia Viewer" />
-              <div class="carousel-caption">
-                <h2>Wikipedia Viewer</h2>
-              </div>
-            </a>
-          </div>
-          <!--currently broken due to codePen.io CORS issues-->
-          <!--<div class="col-sm-4 portfolio-project">-->
-          <!--  <a href="https://codepen.io/jdg99/full/mPmeLN/" target="_blank">-->
-          <!--    <img class="img-rounded" src="public/img/projects/twitch.png" alt="Twitch Streamer" />-->
-          <!--    <div class="carousel-caption">-->
-          <!--      <h2>Twitch Streamer</h2>-->
-          <!--    </div>-->
-          <!--  </a>-->
-          <!--</div>-->
-          <div class="col-sm-4 portfolio-project">
-            <a href="https://codepen.io/jdg99/full/aNYojq/" target="_blank">
-              <img class="img-rounded" src="public/img/projects/calculator.png" alt="Digital Calculator" />
-              <div class="carousel-caption">
-                <h2>Digital Calculator</h2>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-4 portfolio-project">
-            <a href="https://codepen.io/jdg99/full/NNYodV/" target="_blank">
-              <img class="img-rounded" src="public/img/projects/pomodoro.png" alt="Pomodoro Clock" />
-              <div class="carousel-caption">
-                <h2>Pomodoro Clock</h2>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-4 portfolio-project">
-            <a href="https://codepen.io/jdg99/full/MyZgMB/" target="_blank">
-              <img class="img-rounded" src="public/img/projects/ticTacToe.png" alt="Tic-Tac-Toe" />
-              <div class="carousel-caption">
-                <h2>Tic Tac Toe</h2>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-4 portfolio-project">
-            <a href="https://codepen.io/jdg99/full/BKeJvm/" target="_blank">
-              <img class="img-rounded" src="public/img/projects/simon.png" alt="Simon Says" />
-              <div class="carousel-caption">
-                <h2>Simon Says</h2>
-              </div>
-            </a>
-          </div>
-				</div>
-				<div class="tab-pane" id="api">
-          <div>
-            <h3>Timestamp Microservice</h3>
-            <p class="font-comfortaa">Passed a string as a parameter, it will check to see whether that string contains either a unix timestamp or a natural language date.</p>
-            <a href="https://github.com/dgonz001/timestampApi" target="_blank" class="btn btn-default contact-btn"><i class="fa fa-github fa-fw"></i> <span class="network-name">Repository</span></a>
-            <a href="https://jdg-timestamp.herokuapp.com/" target="_blank" class="btn btn-default contact-btn"><i class="fa fa-globe fa-fw"></i> <span class="network-name">Service</span></a>
-          </div>
-          <div>
-            <h3>Request Header Parser Microservice</h3>
-            <p class="font-comfortaa">This Microservice eturns the IP address, language and operating system for the current browser.</p>
-            <a href="https://github.com/dgonz001/headerParser" target="_blank" class="btn btn-default contact-btn"><i class="fa fa-github fa-fw"></i> <span class="network-name">Repository</span></a>
-            <a href="https://jdg-header-parser.herokuapp.com/" target="_blank" class="btn btn-default contact-btn"><i class="fa fa-globe fa-fw"></i> <span class="network-name">Service</span></a>
-          </div>
-          <div>
-            <h3>URL Shortener Microservice</h3>
-            <p class="font-comfortaa">Generates and returns a shortened URL.</p>
-            <a href="https://github.com/dgonz001/urlShortener" target="_blank" class="btn btn-default contact-btn"><i class="fa fa-github fa-fw"></i> <span class="network-name">Repository</span></a>
-            <a href="https://jdg-short.herokuapp.com/" target="_blank" class="btn btn-default contact-btn"><i class="fa fa-globe fa-fw"></i> <span class="network-name">Service</span></a>
-          </div>
-          <div>
-            <h3>Image Search Abstraction Layer</h3>
-            <p class="font-comfortaa">A simple image search abstraction layer that allows a user to search for images and view the most recent searches.</p>
-            <a href="https://github.com/dgonz001/imageSearch" target="_blank" class="btn btn-default contact-btn"><i class="fa fa-github fa-fw"></i> <span class="network-name">Repository</span></a>
-            <a href="https://jdg-image.herokuapp.com/" target="_blank" class="btn btn-default contact-btn"><i class="fa fa-globe fa-fw"></i> <span class="network-name">Service</span></a>
-          </div>
-          <div>
-            <h3>File Metadata Microservice</h3>
-            <p class="font-comfortaa">This microservice gives you the size (in bytes) of any formdata that you provide for upload.</p>
-            <a href="https://github.com/dgonz001/fileMetadata" target="_blank" class="btn btn-default contact-btn"><i class="fa fa-github fa-fw"></i> <span class="network-name">Repository</span></a>
-            <a href="https://jdg-metadata.herokuapp.com/" target="_blank" class="btn btn-default contact-btn"><i class="fa fa-globe fa-fw"></i> <span class="network-name">Service</span></a>
-          </div>
-				</div>
-				<div class="tab-pane" id="webapp">
-          <div>
-            <h3>Voting App</h3>
-            <p class="font-comfortaa">Pollapalooza is an app that allows you to create, view, and vote on user made polls</p>
-            <a href="https://github.com/dgonz001/votingApp" target="_blank" class="btn btn-default contact-btn"><i class="fa fa-github fa-fw"></i> <span class="network-name">Repository</span></a>
-            <a href="https://pollapalooza.herokuapp.com/" target="_blank" class="btn btn-default contact-btn"><i class="fa fa-globe fa-fw"></i> <span class="network-name">Web Application</span></a>
-          </div>
-				</div>
-      </div>
+      <div ng-include src="'views/portfolio.html'" ng-controller="PortfolioCtrl"></div>
     </div>
   
     <a name="contact"></a>
     <div class="container contact-container">
-      <div class="row opacity">
-        <div class="col-sm-9">
-          <div class="panel panel-info">
-            <div class="panel-heading">
-              <h1 class="panel-title font-chewy">Drop me a line</h1>
-            </div>
-            <div class="panel-body">
-              <p>
-                If you would like to know any more about me, or have any questions, feel free to contact me. I am happy to answer any questions you may have.
-              </P>
-  
-              <form id="emailForm">
-                <div class="row form-group">
-                  <label for="name" class="col-sm-2 control-label">Name:</label>
-                  <div class="col-sm-10">
-                    <input type="text" class="form-control" name="name" id="name" placeholder="First & Last Name">
-                  </div>
-                </div>
-                <div class="row form-group">
-                  <label for="human" class="col-sm-2 control-label">Subject:</label>
-                  <div class="col-sm-10">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="">
-                  </div>
-                </div>
-                <div class="row form-group">
-                  <label for="message" class="col-sm-2 control-label">Message:</label>
-                  <div class="col-sm-10">
-                    <textarea class="form-control" rows="3" name="message" id="message"></textarea>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="col-sm-12">
-                    <ul class="pager">
-                      <li><a href="#contact" onClick="validateAndSubmit()">Compose</a></li>
-                      <li><a href="#contact" onClick="clearForm()">Clear</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="panel panel-info">
-            <div class="panel-heading">
-              <h3 class="panel-title font-chewy">EMAIL</h3>
-            </div>
-            <div class="panel-body">
-              <a href="MAILTO:JDG99@live.com" target="_top">JDG99@live.com</a>
-            </div>
-            <div class="panel-heading">
-              <h3 class="panel-title font-chewy">PHONE</h3>
-            </div>
-            <div class="panel-body">
-              <a href="tel:509-264-0988">509.264.0988</a>
-            </div>
-            <div class="panel-heading">
-              <h3 class="panel-title font-chewy">ON THE WEB</h3>
-            </div>
-            <div class="panel-body contact-block">
-              <ul class="list-inline social-buttons">
-                <li>
-                  <a href="https://github.com/dgonz001" target="_blank" class="btn btn-default contact-btn"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/danny_b0y03" target="_blank" class="btn btn-default contact-btn"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/in/jdannygonzalez" target="_blank" class="btn btn-default contact-btn"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                </li>
-                <li>
-                  <a href="https://www.freecodecamp.com/dgonz001" target="_blank" class="btn btn-default contact-btn"><span class="glyphicon glyphicon-tent"></span> <span class="network-name">freeCodeCamp</span></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div ng-include src="'views/contact.html'" ng-controller="ContactCtrl"></div>
     </div>
+    
     <!-- scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="public/js/index.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
   </body>  
 </html>
