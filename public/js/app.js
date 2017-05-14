@@ -105,6 +105,32 @@ app.controller('ContactCtrl', ['$scope', function($scope) {
   };
 }]);
 
+app.controller('HomeCtrl', ['$scope', function($scope) {
+  $scope.name = {
+    'big' : 'Jose Daniel Gonzalez',
+    'small' : 'JD Gonzalez',
+    'tagLine' : 'Developer in Training'
+  };
+  
+  $scope.mediaList = [{
+      'name' : 'freeCodeCamp',
+      'class' : 'glyphicon glyphicon-tent',
+      'href' : 'https://www.freecodecamp.com/dgonz001'
+    }, {
+      'name' : 'Github',
+      'class' : 'fa fa-github fa-fw',
+      'href' : 'https://github.com/dgonz001'
+    }, {
+      'name' : 'Linkedin',
+      'class' : 'fa fa-linkedin fa-fw',
+      'href' : 'https://www.linkedin.com/in/jdannygonzalez'
+    }, {
+      'name' : 'Twitter',
+      'class' : 'fa fa-twitter fa-fw',
+      'href' : 'https://twitter.com/danny_b0y03'
+    }];
+}]);
+
 app.controller('PortfolioCtrl', ['$scope', function($scope) {
   $scope.greeting = 'Hola!';
 }]);
