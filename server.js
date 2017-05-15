@@ -1,13 +1,10 @@
 var express = require('express');
 
 var server = express();
-server.use('/views', express.static(__dirname + '/public/views'));
-server.use('/img', express.static(__dirname + '/public/img'));
-server.use('/css', express.static(__dirname + '/public/css'));
-server.use('/js', express.static(__dirname + '/public/js'));
+server.use('/public', express.static(__dirname + '/public'));
 
-server.all('/*', function(req, res, next) {
-    res.sendFile('index.html', { root: __dirname });
+server.get('/*', function(req, res){
+  res.sendFile(__dirname + '/index.html');
 });
 
 var port = 8080;

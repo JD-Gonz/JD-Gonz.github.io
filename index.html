@@ -23,7 +23,7 @@
                                                                        
 //-->
 <!DOCTYPE HTML>
-<html lang="en" ng-app="PersonalWebsite">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="author" content="Jose Daniel Gonzalez">
@@ -36,39 +36,39 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Shadows+Into+Light|Pacifico|Chewy|Comfortaa'>
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Shadows+Into+Light|Pacifico|Chewy|Comfortaa">
+    <link rel="stylesheet" type="text/css" href="public/css/main.css">
     <title>Jose Daniel Gonzalez</title>
   </head>
-  <body>
+  <body ng-app="PersonalWebsite">
     <nav class="navbar navbar-inverse navbar-fixed-top font-comfortaa">
-      <div ng-include src="'views/navBar.html'"></div>
+      <div ng-include src="'public/views/navBar.html'"></div>
     </nav>
   
     <a name="home"></a>
     <div class="container home-container">
-      <div ng-include src="'views/home.html'" ng-controller="HomeCtrl"></div>
+      <div ng-include src="'public/views/home.html'" ng-controller="HomeCtrl"></div>
     </div>
   
     <a name="about"></a>
     <div class="container about-container">
-      <div ng-include src="'views/about.html'" ng-controller="AboutCtrl"></div>
+      <div ng-include src="'public/views/about.html'" ng-controller="AboutCtrl"></div>
     </div>
   
     <a name="portfolio"></a>
     <div class="container portfolio-container skill-block text-center">
-      <div ng-include src="'views/portfolio.html'" ng-controller="PortfolioCtrl"></div>
+      <div ng-include src="'public/views/portfolio.html'" ng-controller="PortfolioCtrl"></div>
     </div>
   
     <a name="contact"></a>
     <div class="container contact-container">
-      <div ng-include src="'views/contact.html'" ng-controller="ContactCtrl"></div>
+      <div ng-include src="'public/views/contact.html'" ng-controller="ContactCtrl"></div>
     </div>
     
     <!-- scripts -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="public/js/app.js"></script>
   </body>  
 </html>
