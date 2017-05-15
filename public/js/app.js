@@ -4,6 +4,8 @@
 var app = angular.module("PersonalWebsite",  []);
 
 app.controller('AboutCtrl', ['$scope', function($scope) {
+  $scope.picture = 'public/img/portrait.jpg';
+  
   $scope.infoList = [
     {
       'title' : 'About Me',
@@ -23,12 +25,12 @@ app.controller('AboutCtrl', ['$scope', function($scope) {
       [{
         'name' : 'Java',
         'isImage' : true,
-        'src' : 'img/icons/java.png',
+        'src' : 'public/img/icons/java.png',
         'alt' : 'Java icon'
       }, {
         'name' : 'Javascript',
         'isImage' : true,
-        'src' : 'img/icons/javascript.png',
+        'src' : 'public/img/icons/javascript.png',
         'alt' : 'Javascript icon'
       }, {
         'name' : 'NodeJS',
@@ -38,12 +40,12 @@ app.controller('AboutCtrl', ['$scope', function($scope) {
       }], [{
         'name' : 'jQuery',
         'isImage' : true,
-        'src' : 'img/icons/jquery.jpg',
+        'src' : 'public/img/icons/jquery.jpg',
         'alt' : 'jQuery icon'
       }, {
         'name' : 'AngularJS',
         'isImage' : true,
-        'src' : 'img/icons/angular.png',
+        'src' : 'public/img/icons/angular.png',
         'alt' : 'AngularJS icon'
       }, {
         'name' : 'CSS3',
@@ -60,7 +62,7 @@ app.controller('AboutCtrl', ['$scope', function($scope) {
       }, {
         'name' : 'Bootstrap',
         'isImage' : true,
-        'src' : 'img/icons/bootstrap.png',
+        'src' : 'public/img/icons/bootstrap.png',
         'alt' : 'Bootstrap icon'
       }]
     ]}; 
@@ -134,41 +136,43 @@ app.controller('HomeCtrl', ['$scope', function($scope) {
 app.controller('PortfolioCtrl', ['$scope', function($scope) {
   let brokenProjects = [{
     'name' : 'Quote Machine',
-    'img' : 'img/projects/randomQuote.png',
+    'img' : 'public/img/projects/randomQuote.png',
     'site' : 'https://codepen.io/jdg99/full/jqbOoV/'
   }, {
     'name' : 'Local Weather App',
-    'img' : 'img/projects/weather.png',
+    'img' : 'public/img/projects/weather.png',
     'site' : 'https://codepen.io/jdg99/full/oxbpJR/'
   }, {
     'name' : 'Twitch Streamer',
-    'img' : 'img/projects/twitch.png',
+    'img' : 'public/img/projects/twitch.png',
     'site' : 'https://codepen.io/jdg99/full/mPmeLN/'
   }];
   
+  $scope.banner = 'public/img/header-portfo.png';
+  
   $scope.frontendProjects = [{
     'name' : 'Tribute Project',
-    'img' : 'img/projects/tribute.png',
+    'img' : 'public/img/projects/tribute.png',
     'site' : 'https://codepen.io/jdg99/full/JGVjPR/'
   }, {
     'name' : 'Wikipedia Viewer',
-    'img' : 'img/projects/wiki.png',
+    'img' : 'public/img/projects/wiki.png',
     'site' : 'https://codepen.io/jdg99/full/qZNmoG/'
   }, {
     'name' : 'Digital Calculator',
-    'img' : 'img/projects/calculator.png',
+    'img' : 'public/img/projects/calculator.png',
     'site' : 'https://codepen.io/jdg99/full/aNYojq/'
   }, {
     'name' : 'Pomodoro Clock',
-    'img' : 'img/projects/pomodoro.png',
+    'img' : 'public/img/projects/pomodoro.png',
     'site' : 'https://codepen.io/jdg99/full/NNYodV/'
   }, {
     'name' : 'Tic-Tac-Toe',
-    'img' : 'img/projects/ticTacToe.png',
+    'img' : 'public/img/projects/ticTacToe.png',
     'site' : 'https://codepen.io/jdg99/full/MyZgMB/'
   }, {
     'name' : 'Simon Says',
-    'img' : 'img/projects/simon.png',
+    'img' : 'public/img/projects/simon.png',
     'site' : 'https://codepen.io/jdg99/full/BKeJvm/'
   }];
     
