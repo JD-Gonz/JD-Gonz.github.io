@@ -1,6 +1,7 @@
 <img class="img-responsive center-block" ng-src="{{banner}}" alt="Portfolio Banner" />
 <ul class="nav nav-tabs nav-justified">
   <li class="active"><a href="#frontend" data-toggle="tab"><h2>Front-End Projects</h2></a></li>
+  <li ><a href="#react" data-toggle="tab"><h2>React Projects</h2></a></li>
   <li ><a href="#webapp" data-toggle="tab"><h2>Web Application Projects</h2></a></li>
   <li><a href="#api" data-toggle="tab"><h2>Api Projects</h2></a></li>
 </ul>
@@ -15,12 +16,14 @@
       </a>
     </div>
 	</div>
-	<div class="tab-pane" id="api">
-    <div ng-repeat="api in apis">
-      <h3>{{api.name}}</h3>
-      <p class="font-comfortaa">{{api.discription}}</p>
-      <a ng-href="{{api.repo}}" target="_blank" class="btn btn-default contact-btn"><i class="fa fa-github fa-fw"></i> <span class="network-name">Repository</span></a>
-      <a ng-href="{{api.site}}" target="_blank" class="btn btn-default contact-btn"><i class="fa fa-globe fa-fw"></i> <span class="network-name">Service</span></a>
+	<div class="tab-pane" id="react">
+    <div class="col-sm-12 portfolio-project" ng-repeat="project in reactProjects">
+      <a ng-href="{{project.site}}" target="_blank">
+        <img class="img-rounded" ng-src="{{project.img}}" alt="project.name" />
+        <div class="carousel-caption">
+          <h2>{{project.name}}</h2>
+        </div>
+      </a>
     </div>
 	</div>
 	<div class="tab-pane" id="webapp">
@@ -29,6 +32,14 @@
       <p class="font-comfortaa">{{app.discription}}</p>
       <a ng-href="{{app.repo}}" target="_blank" class="btn btn-default contact-btn"><i class="fa fa-github fa-fw"></i> <span class="network-name">Repository</span></a>
       <a ng-href="{{app.site}}" target="_blank" class="btn btn-default contact-btn"><i class="fa fa-globe fa-fw"></i> <span class="network-name">Web Application</span></a>
+    </div>
+	</div>
+	<div class="tab-pane" id="api">
+    <div ng-repeat="api in apis">
+      <h3>{{api.name}}</h3>
+      <p class="font-comfortaa">{{api.discription}}</p>
+      <a ng-href="{{api.repo}}" target="_blank" class="btn btn-default contact-btn"><i class="fa fa-github fa-fw"></i> <span class="network-name">Repository</span></a>
+      <a ng-href="{{api.site}}" target="_blank" class="btn btn-default contact-btn"><i class="fa fa-globe fa-fw"></i> <span class="network-name">Service</span></a>
     </div>
 	</div>
 </div>

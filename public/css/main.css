@@ -118,6 +118,10 @@ hr.sexy-line {
   -webkit-transition: .4s ease-in-out;
   transition: .4s ease-in-out;
   opacity: 1;
+  color: white;
+   -webkit-text-fill-color:  #FFF;
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: #000;
 }
 
 .portfolio-container a:hover .carousel-caption h2 {

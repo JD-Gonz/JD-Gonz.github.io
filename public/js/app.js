@@ -209,6 +209,12 @@ app.controller('PortfolioCtrl', ['$scope', function($scope) {
     'repo' : 'https://github.com/dgonz001/votingApp',
     'site' : 'https://pollapalooza.herokuapp.com/'
   }];
+  
+  $scope.reactProjects = [{
+    'name' : 'Markdown Previewer',
+    'img' : 'public/img/projects/markdown.png',
+    'site' : 'https://codepen.io/jdg99/full/yXmxKL'
+  }];
 }]);
 
 $(function() {
