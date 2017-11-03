@@ -1,4 +1,4 @@
-,/* global $ document angular */
+/* global $ document angular */
 'use strict';
 
 var app = angular.module("PersonalWebsite",  []);
