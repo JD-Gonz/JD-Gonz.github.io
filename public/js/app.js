@@ -9,13 +9,13 @@ app.controller('AboutCtrl', ['$scope', function($scope) {
   $scope.infoList = [
     {
       'title' : 'About Me',
-      'content' : 'Hi, I\'m Jose Daniel Gonzalez, but you can call me Danny or JD, whichever you prefer. I am a graduate of the University of Washington. Currently, I am working as a Software Developer based in Seattle, WA.'
+      'content' : 'Hi, I\'m Jose Daniel Gonzalez, but you can call me Danny or JD, whichever you prefer. I am a graduate of the University of Washington. I created this page to showcase some of the work I have done while practicing my coding skills.'
     }, {
       'title' : 'Background',
-      'content' : 'I grew up in central Washington, and have been living in Seattle for about seven years now. I came to Seattle in pursuit of higher education at the University of Washington, where I earned a degree in Informatics with a focus in Information Assurance and Cybersecurity. During my time at the University of Washington, I also worked for PEMCO Insurance on a three-month summer internship and Informion as a Software Developer part-time.'
+      'content' : 'I grew up in central Washington, and have been living in Seattle since moving here in 2010. I came to Seattle in pursuit of higher education at the University of Washington, where I earned a degree in Informatics with a focus in Information Assurance and Cybersecurity.'
     }, {
-      'title' : 'Developer In Training',
-      'content' : 'I thought that the tag-line “Developer in Training” was a rather quaint one to use while studying in college. It also sounded like it would be an appropriate phrase while I was still being mentored. I have quickly realized that software developers never really stop learning. We always have to “train” for the next big thing – or, better yet, invent it.'
+      'title' : 'Aspiring Product Manager',
+      'content' : 'I have really enjoyed my time as a software engineer, but I now want to try my had at product/technical project management. Since I have shifted my focus, this page will inevitably become more of a historical marker of what I had accomplished earlier in my career.'
     }
   ];
   
