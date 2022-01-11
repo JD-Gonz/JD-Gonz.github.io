@@ -77,7 +77,7 @@ app.controller('ContactCtrl', ['$scope', function($scope) {
   
   $scope.email = {
     'title' : 'EMAIL',
-    'content' : 'DGONZ001@uw.edu'
+    'content' : 'JODG509@gmail.com'
   };
   
   $scope.phone = {
