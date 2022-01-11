@@ -88,17 +88,17 @@ app.controller('ContactCtrl', ['$scope', function($scope) {
   $scope.web = {
     'title' : 'ON THE WEB',
     'content' : [{
-      'name' : 'freeCodeCamp',
-      'class' : 'glyphicon glyphicon-tent',
-      'href' : 'https://www.freecodecamp.com/dgonz001'
+      'name' : 'Linkedin',
+      'class' : 'fa fa-linkedin fa-fw',
+      'href' : 'https://www.linkedin.com/in/jdannygonzalez'
     }, {
       'name' : 'Github',
       'class' : 'fa fa-github fa-fw',
       'href' : 'https://github.com/dgonz001'
     }, {
-      'name' : 'Linkedin',
-      'class' : 'fa fa-linkedin fa-fw',
-      'href' : 'https://www.linkedin.com/in/jdannygonzalez'
+      'name' : 'freeCodeCamp',
+      'class' : 'glyphicon glyphicon-tent',
+      'href' : 'https://www.freecodecamp.com/dgonz001'
     }, {
       'name' : 'Twitter',
       'class' : 'fa fa-twitter fa-fw',
@@ -114,18 +114,18 @@ app.controller('HomeCtrl', ['$scope', function($scope) {
     'tagLine' : 'Aspiring Product Manager'
   };
   
-  $scope.mediaList = [{
-      'name' : 'freeCodeCamp',
-      'class' : 'glyphicon glyphicon-tent',
-      'href' : 'https://www.freecodecamp.com/dgonz001'
+  $scope.mediaList = [ {
+      'name' : 'Linkedin',
+      'class' : 'fa fa-linkedin fa-fw',
+      'href' : 'https://www.linkedin.com/in/jdannygonzalez'
     }, {
       'name' : 'Github',
       'class' : 'fa fa-github fa-fw',
       'href' : 'https://github.com/dgonz001'
     }, {
-      'name' : 'Linkedin',
-      'class' : 'fa fa-linkedin fa-fw',
-      'href' : 'https://www.linkedin.com/in/jdannygonzalez'
+      'name' : 'freeCodeCamp',
+      'class' : 'glyphicon glyphicon-tent',
+      'href' : 'https://www.freecodecamp.com/dgonz001'
     }, {
       'name' : 'Twitter',
       'class' : 'fa fa-twitter fa-fw',
