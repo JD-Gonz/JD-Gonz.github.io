@@ -111,7 +111,7 @@ app.controller('HomeCtrl', ['$scope', function($scope) {
   $scope.name = {
     'big' : 'Jose Daniel Gonzalez',
     'small' : 'JD Gonzalez',
-    'tagLine' : 'Developer in Training'
+    'tagLine' : 'Aspiring Product Manager'
   };
   
   $scope.mediaList = [{
