@@ -35,7 +35,7 @@ app.controller('AboutCtrl', ['$scope', function($scope) {
       }, {
         'name' : 'NodeJS',
         'isImage' : true,
-        'src' : 'https://s15.postimg.org/y6yh5yhyf/z6_JAz_YU.png',
+        'src' : 'https://cdn.iconscout.com/icon/free/png-256/node-js-1174925.png',
         'alt' : 'Node icon' 
       }], [{
         'name' : 'jQuery',
