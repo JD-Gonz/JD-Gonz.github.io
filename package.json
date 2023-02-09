@@ -4,7 +4,8 @@
   "description": "This app hosts a website to showcase some projects I have worked on.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,6 @@
   "homepage": "https://github.com/dgonz001/dgonz001.github.io#readme",
   "dependencies": {
     "express": "^4.14.0"
-  }
+  },
+  "devDependencies": {}
 }
