@@ -9,13 +9,13 @@ app.controller('AboutCtrl', ['$scope', function($scope) {
   $scope.infoList = [
     {
       'title' : 'About Me',
-      'content' : 'Hi, I\'m Jose Daniel Gonzalez, but you can call me Danny or JD, whichever you prefer. I am a graduate of the University of Washington. I created this page to showcase some of the work I have done while practicing my coding skills.'
-    }, {
-      'title' : 'Background',
-      'content' : 'I grew up in central Washington, and have been living in Seattle since moving here in 2010. I came to Seattle in pursuit of higher education at the University of Washington, where I earned a degree in Informatics with a focus in Information Assurance and Cybersecurity.'
+      'content' : 'Hi, I\'m Jose Gonzalez. I am a graduate of the University of Washington. I created this page to showcase some of the work I had done while practicing my coding skills early on in my career.'
     }, {
       'title' : 'Aspiring Product Manager',
-      'content' : 'I have really enjoyed my time as a software engineer, but I now want to try my had at product/technical project management. Since I have shifted my focus, this page will inevitably become more of a historical marker of what I had accomplished earlier in my career.'
+      'content' : 'I have really enjoyed my time as a software engineer, and now I want to try my hand at management, whether that be product, project, or technical. Since I have shifted my focus, this page will inevitably become more of a historical marker of what I have accomplished earlier in my career.'
+    }, {
+      'title' : 'Background',
+      'content' : 'I was born and raised here in Washington and have been living in the greater Seattle area since moving here in 2010. I came to Seattle in pursuit of higher education at the University of Washington, where I earned a degree in Informatics with a focus in Information Assurance and Cybersecurity.'
     }
   ];
   
@@ -77,7 +77,7 @@ app.controller('ContactCtrl', ['$scope', function($scope) {
   
   $scope.email = {
     'title' : 'EMAIL',
-    'content' : 'JODG509@gmail.com'
+    'content' : 'JD.Gonz@outlook.com'
   };
   
   $scope.phone = {
@@ -126,10 +126,6 @@ app.controller('HomeCtrl', ['$scope', function($scope) {
       'name' : 'freeCodeCamp',
       'class' : 'glyphicon glyphicon-tent',
       'href' : 'https://www.freecodecamp.com/dgonz001'
-    }, {
-      'name' : 'Twitter',
-      'class' : 'fa fa-twitter fa-fw',
-      'href' : 'https://twitter.com/danny_b0y03'
     }];
 }]);
 
