@@ -50,9 +50,8 @@ hr.sexy-line {
   background-image: -ms-linear-gradient(right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
   background-image: -o-linear-gradient(right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 }
-
 .about-container {
-  color: #fff;
+  color: #303030;
   background: url(../img/backgrounds/matrix.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -61,8 +60,11 @@ hr.sexy-line {
 }
 
 .about-container .well {
-  background-color: rgba(120, 120, 120, 0.4);
-  border: 10px black;
+  background-color: rgba(248, 248, 248, 0.8);
+}
+
+.about-info {
+  white-space: pre-line;
 }
 
 .about-padding {
@@ -92,7 +94,6 @@ hr.sexy-line {
 .portfolio-container {
   color: #fff;
   padding-top: 60px;
-  font-family: 'Chewy', cursive;
   background: url(../img/backgrounds/woodroom.jpg);
   background-size: cover;
   background-repeat: no-repeat;

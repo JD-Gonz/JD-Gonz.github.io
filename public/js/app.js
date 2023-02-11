@@ -9,13 +9,20 @@ app.controller('AboutCtrl', ['$scope', function($scope) {
   $scope.infoList = [
     {
       'title' : 'About Me',
-      'content' : 'Hi, I\'m Jose Gonzalez. I am a graduate of the University of Washington. I created this page to showcase some of the work I had done while practicing my coding skills early on in my career.'
+      'content' : `My name is Jose Gonzalez. I am currently a software engineer with a passion for problem solving and engaging in meaningful conversations.\n 
+      
+      Since 2015, I have been working professionally, honing my skills, and expanding my knowledge base to better serve my clients and employers. I take pride in my work and am always striving to improve and innovate.
+      
+      When I'm not working, I enjoy staying active and engage in physical activities. I'm also a proud father, who values spending quality time with family. In addition to this, I has a love for chess and enjoy trying and picking up new hobbies.`      
     }, {
-      'title' : 'Aspiring Product Manager',
-      'content' : 'I have really enjoyed my time as a software engineer, and now I want to try my hand at management, whether that be product, project, or technical. Since I have shifted my focus, this page will inevitably become more of a historical marker of what I have accomplished earlier in my career.'
-    }, {
-      'title' : 'Background',
-      'content' : 'I was born and raised here in Washington and have been living in the greater Seattle area since moving here in 2010. I came to Seattle in pursuit of higher education at the University of Washington, where I earned a degree in Informatics with a focus in Information Assurance and Cybersecurity.'
+      'title' : 'Aspiring project/product Manager',
+      'content' : `I have always been passionate about technology and software engineering. However, he now feels that it is time for him to take his skills to the next level by transitioning into project/product management.
+      
+      I believe that my background as a software engineer has given me a unique perspective on the development process and a strong understanding of the technical aspects of a project. I am confident that this knowledge will allow me to effectively manage projects and ensure that they are delivered on time, within budget, and to the required quality standards.
+      
+      I am drawn to project/product management because I enjoy being at the forefront of the development process, working closely with cross-functional teams, and ensuring that projects are executed efficiently. I am excited about the opportunity to lead projects, manage resources, and contribute to the growth and success of my future mean and company.
+      
+      I'm eager to bring my strong problem-solving skills, technical knowledge, and passion for technology to the role of project/product manager. I am confident that this transition will allow me to continue growing professionally, while making a meaningful impact on the projects and teams I work with.`
     }
   ];
   
@@ -144,7 +151,9 @@ app.controller('PortfolioCtrl', ['$scope', function($scope) {
     'site' : 'https://codepen.io/jdg99/full/mPmeLN/'
   }];
   
-  $scope.banner = 'public/img/header-portfo.png';
+  $scope.projectBanner = 'public/img/header-portfo.png';
+
+  $scope.projectDiscription = 'A colection of projects I created early on in my software engineering career to showcase my skills.';
   
   $scope.frontendProjects = [{
     'name' : 'Tribute Project',
