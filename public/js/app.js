@@ -106,10 +106,6 @@ app.controller('ContactCtrl', ['$scope', function($scope) {
       'name' : 'freeCodeCamp',
       'class' : 'glyphicon glyphicon-tent',
       'href' : 'https://www.freecodecamp.com/dgonz001'
-    }, {
-      'name' : 'Twitter',
-      'class' : 'fa fa-twitter fa-fw',
-      'href' : 'https://twitter.com/danny_b0y03'
     }]
   };
 }]);
