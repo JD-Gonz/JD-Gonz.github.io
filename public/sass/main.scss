@@ -170,7 +170,7 @@
 		@include vendor('transition', ('background-color 0.35s ease-in-out', 'color 0.35s ease-in-out', 'border-bottom-color 0.35s ease-in-out'));
 
 		&:hover {
-			color: #ef8376;
+			color: #B0E0EC;
 			border-bottom-color: transparent;
 		}
 	}
@@ -489,7 +489,7 @@
 				color: inherit;
 
 				&:hover {
-					color: #ef8376;
+					color: #B0E0EC;
 				}
 			}
 		}
@@ -522,7 +522,7 @@
 
 			&:focus {
 				background: #fff;
-				border-color: #df7366;
+				border-color: #86CDDF;
 			}
 		}
 
@@ -609,7 +609,7 @@
 	.button {
 		position: relative;
 		display: inline-block;
-		background: #df7366;
+		background: #86CDDF;
 		color: #fff;
 		text-align: center;
 		border-radius: 0.5em;
@@ -623,7 +623,7 @@
 
 		&:hover {
 			color: #fff;
-			background: #ef8376;
+			background: #B0E0EC;
 		}
 
 		&.alt {
@@ -711,11 +711,11 @@
 
 	#header {
 		position: relative;
-		background-image: url('../images/header.jpg');
+		background-image: url('../images/seattle.jpg');
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;
-		color: #fff;
+		color: #fff0f0;
 		text-align: center;
 		padding: 7.5em 0 2em 0;
 		cursor: default;
@@ -906,7 +906,7 @@
 			}
 
 			&:hover {
-				color: #ef8376;
+				color: #B0E0EC;
 			}
 
 			a, span {
@@ -1474,8 +1474,10 @@
 					top: 0;
 					width: 100%;
 					height: 100%;
-					background: url('../images/header.jpg');
-					background-size: 128px 128px;
+					background: url("../images/pic01.jpg");
+					background-size: cover;
+					background-position: center center;
+					background-attachment: fixed;
 				}
 
 				.link {

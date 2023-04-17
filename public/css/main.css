@@ -152,7 +152,7 @@ input, select, textarea {
 	}
 
 		a:hover {
-			color: #ef8376;
+			color: #B0E0EC;
 			border-bottom-color: transparent;
 		}
 
@@ -1929,7 +1929,7 @@ input, select, textarea {
 			}
 
 				ul.icons li a:hover {
-					color: #ef8376;
+					color: #B0E0EC;
 				}
 
 /* Form */
@@ -1966,7 +1966,7 @@ input, select, textarea {
 		form select:focus,
 		form textarea:focus {
 			background: #fff;
-			border-color: #df7366;
+			border-color: #86CDDF;
 		}
 
 	form input[type="text"],
@@ -2049,7 +2049,7 @@ input, select, textarea {
 	.button {
 		position: relative;
 		display: inline-block;
-		background: #df7366;
+		background: #86CDDF;
 		color: #fff;
 		text-align: center;
 		border-radius: 0.5em;
@@ -2071,7 +2071,7 @@ input, select, textarea {
 		button:hover,
 		.button:hover {
 			color: #fff;
-			background: #ef8376;
+			background: #B0E0EC;
 		}
 
 		input[type="button"].alt,
@@ -2170,11 +2170,11 @@ input, select, textarea {
 
 	#header {
 		position: relative;
-		background-image: url("../images/header.jpg");
+		background-image: url("../images/seattle.jpg");
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;
-		color: #fff;
+		color: #fff0f0;
 		text-align: center;
 		padding: 7.5em 0 2em 0;
 		cursor: default;
@@ -2370,7 +2370,7 @@ input, select, textarea {
 			}
 
 			.dropotron li:hover {
-				color: #ef8376;
+				color: #B0E0EC;
 			}
 
 			.dropotron li a, .dropotron li span {
@@ -2960,8 +2960,10 @@ input, select, textarea {
 					top: 0;
 					width: 100%;
 					height: 100%;
-					background: url("../images/header.jpg");
-					background-size: 128px 128px;
+					background: url("../images/pic01.jpg");
+					background-size: cover;
+					background-position: center center;
+					background-attachment: fixed;
 				}
 
 				#navPanel .link {
