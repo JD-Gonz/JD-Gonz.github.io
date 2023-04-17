@@ -1,5 +1,3 @@
-angular.module('PersonalWebsite', []);
-
 (function ($) {
   var $window = $(window),
     $body = $('body'),
