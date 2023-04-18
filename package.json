@@ -1,11 +1,11 @@
 {
   "name": "portfolio",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "This app hosts a website to showcase some projects I have worked on.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,7 @@
   "dependencies": {
     "express": "^4.14.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
 }

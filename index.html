@@ -23,52 +23,340 @@
                                                                        
 //-->
 <!DOCTYPE HTML>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="author" content="Jose Daniel Gonzalez">
-    <meta property="og:title" content="JD's Personal Profile Page">
-    <meta property="og:site_name" content="Jose Daniel Gonzalez">
-    <meta property="og:url" content="https://dgonz001.github.io/">
-    <meta property="og:description" content="I am a software developer based in Seattle, WA. This page is to showcase some projects I have worked on.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://dgonz001.github.io/public/img/portrait.jpg">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Shadows+Into+Light|Pacifico|Chewy|Comfortaa">
-    <link rel="stylesheet" type="text/css" href="public/css/main.css">
-    <title>Jose Daniel Gonzalez</title>
-  </head>
-  <body ng-app="PersonalWebsite">
-    <nav class="navbar navbar-inverse navbar-fixed-top font-comfortaa">
-      <div ng-include src="'public/views/navBar.html'"></div>
-    </nav>
-  
-    <a name="home"></a>
-    <div class="container home-container">
-      <div ng-include src="'public/views/home.html'" ng-controller="HomeCtrl"></div>
+<html>
+
+<head>
+  <title>JD Gonzalez</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="./public/css/main.css" />
+  <noscript>
+    <link rel="stylesheet" href="./public/css/noscript.css" />
+  </noscript>
+</head>
+
+<body class="homepage is-preload">
+  <div id="page-wrapper">
+
+    <!-- Header -->
+    <div id="header">
+
+      <!-- Inner -->
+      <div class="inner">
+        <header>
+          <h1 id="logo">JD Gonzalez</h1>
+          <hr />
+          <p>Continuous learner, problem-solver, leader </p>
+        </header>
+        <footer>
+          <a href="#banner" class="button circled scrolly">Explore</a>
+        </footer>
+      </div>
+
+      <!-- Nav -->
+      <nav id="nav">
+        <ul>
+          <li><a href="#banner">Projects</a></li>
+          <li><a href="#main">About Me</a></li>
+          <li><a href="#footer">Contact Me</a></li>
+        </ul>
+      </nav>
     </div>
-  
-    <a name="about"></a>
-    <div class="container about-container">
-      <div ng-include src="'public/views/about.html'" ng-controller="AboutCtrl"></div>
+
+    <!-- Banner -->
+    <section id="banner">
+      <header>
+        <h2><strong>Portfolio Highlights</strong></h2>
+        <p>
+          I am proud to share a selection side projects I have created over the years.
+          These projects have allowed me to develop my skills as a software engineer and have given me the opportunity
+          to experiment with new technologies and techniques. From web development to APIs and beyond,
+          each project has taught me valuable lessons and contributed to my growth as a professional.
+          I hope you enjoy exploring this portfolio and seeing how I have leveraged my skills and experience to create
+          innovative solutions.
+        </p>
+      </header>
+    </section>
+
+    <!-- Carousel -->
+    <section class="carousel">
+      <div class="reel">
+
+        <article>
+          <a href="https://codepen.io/jdg99/full/yXmxKL" target="_blank" class="image featured"><img
+              src="public/images/markdown.jpg" alt="markdown previewer" /></a>
+          <header>
+            <h3><a href="https://codepen.io/jdg99/full/yXmxKL" target="_blank">Markdown Previewer</a></h3>
+          </header>
+          <p>Instant feedback with this real-time markdown previewer. Type, format, and repeat!</p>
+        </article>
+
+        <article>
+          <a href="https://codepen.io/jdg99/full/BKeJvm/" target="_blank" class="image featured"><img
+              src="public/images/simon.jpg" alt="siman says" /></a>
+          <header>
+            <h3><a href="https://codepen.io/jdg99/full/BKeJvm/" target="_blank">Simon Says</a></h3>
+          </header>
+          <p>Think you can keep up? Try your hand at Simon Says, the game that's easy to learn but hard to master.</p>
+        </article>
+
+        <article>
+          <a href="https://codepen.io/jdg99/full/MyZgMB/" target="_blank" class="image featured"><img
+              src="public/images/ticTacToe.jpg" alt="tic-tac-toe" /></a>
+          <header>
+            <h3><a href="https://codepen.io/jdg99/full/MyZgMB/" target="_blank">Tic-Tac-Toe</a></h3>
+          </header>
+          <p>Tic-tac-toe just got more interesting with this game that pits you against the computer.</p>
+        </article>
+
+        <article>
+          <a href="https://codepen.io/jdg99/full/NNYodV/" target="_blank" class="image featured"><img
+              src="public/images/pomodoro.jpg" alt="pomodoro clock" /></a>
+          <header>
+            <h3><a href="https://codepen.io/jdg99/full/NNYodV/" target="_blank">Pomodoro Clock</a></h3>
+          </header>
+          <p>A simple yet effective tool to help you manage your time and accomplish your tasks more efficiently.</p>
+        </article>
+
+        <article>
+          <a href="https://codepen.io/jdg99/full/aNYojq/" target="_blank" class="image featured"><img
+              src="public/images/calculator.jpg" alt="digital calculator" /></a>
+          <header>
+            <h3><a href="https://codepen.io/jdg99/full/aNYojq/" target="_blank">Digital Calculator</a></h3>
+          </header>
+          <p>Make quick work of complex calculations with this digital calculator that has all the features you need.
+          </p>
+        </article>
+
+        <article>
+          <a href="https://codepen.io/jdg99/full/qZNmoG/" target="_blank" class="image featured"><img
+              src="public/images/wiki.jpg" alt="wikipedia viewer" /></a>
+          <header>
+            <h3><a href="https://codepen.io/jdg99/full/qZNmoG/" target="_blank">Wikipedia Viewer</a></h3>
+          </header>
+          <p>Find everything you need to know on Wikipedia with this fun to use and handy viewer tool.</p>
+        </article>
+
+        <article>
+          <a href="https://codepen.io/jdg99/full/oxbpJR/" target="_blank" class="image featured"><img
+              src="public/images/weather.jpg" alt="local weather app" /></a>
+          <header>
+            <h3><a href="https://codepen.io/jdg99/full/oxbpJR/" target="_blank">Local Weather</a></h3>
+          </header>
+          <p>Plan your day with confidence using this app that gives you the local weather forecast.</p>
+        </article>
+
+        <article>
+          <a href="https://codepen.io/jdg99/full/mPmeLN/" target="_blank" class="image featured"><img
+              src="public/images/twitch.jpg" alt="twitch streamer app" /></a>
+          <header>
+            <h3><a href="https://codepen.io/jdg99/full/mPmeLN/" target="_blank">Twitch Streamers</a></h3>
+          </header>
+          <p>The ultimate Twitch companion that keeps you updated on when your favorite streamers are live.</p>
+        </article>
+
+        <article>
+          <a href="https://codepen.io/jdg99/full/jqbOoV/" target="_blank" class="image featured"><img
+              src="public/images/randomQuote.jpg" alt="quote generator" /></a>
+          <header>
+            <h3><a href="https://codepen.io/jdg99/full/jqbOoV/" target="_blank">Quote Machine</a></h3>
+          </header>
+          <p>Expand your horizons with this app that provides a never-ending stream of thought-provoking quotes.</p>
+        </article>
+
+        <article>
+          <a href="https://codepen.io/jdg99/full/JGVjPR/" target="_blank" class="image featured"><img
+              src="public/images/tribute.jpg" alt="tribute page" /></a>
+          <header>
+            <h3><a href="https://codepen.io/jdg99/full/JGVjPR/" target="_blank">Tribute Project</a></h3>
+          </header>
+          <p>Celebrate the timeless wisdom of this classic book with a tribute page that highlights its lessons.</p>
+        </article>
+
+        <article>
+          <a href="https://pollapalooza.netlify.app/" target="_blank" class="image featured"><img
+              src="public/images/pollapalooza.jpg" alt="pollapalooza" /></a>
+          <header>
+            <h3><a href="https://github.com/JD-Gonz/votingApp" target="_blank">Pollapalooza</a></h3>
+          </header>
+          <p>Engage with your community with this user-friendly web app for creating, viewing, and voting on polls.</p>
+        </article>
+
+        <article>
+          <a href="https://file-md-microservice.netlify.app/" target="_blank" class="image featured"><img
+              src="public/images/fileMetadata.jpg" alt="file metadata microservice" /></a>
+          <header>
+            <h3><a href="https://github.com/JD-Gonz/fileMetadata" target="_blank">File Metadata</a></h3>
+          </header>
+          <p>Easily access important file details with this microservice that provides file metadata.</p>
+        </article>
+
+        <article>
+          <a href="https://image-search-al.netlify.app/" target="_blank" class="image featured"><img
+              src="public/images/imageSearch.jpg" alt="image search abstraction layer" /></a>
+          <header>
+            <h3><a href="https://github.com/JD-Gonz/imageSearch" target="_blank">Image Search</a></h3>
+          </header>
+          <p>Streamline your searches and deliver results quickly and effortlessly with this abstraction layer.</p>
+        </article>
+
+        <article>
+          <a href="https://url-shortener-ms.netlify.app/" target="_blank" class="image featured"><img
+              src="public/images/urlShortener.jpg" alt="url shortener" /></a>
+          <header>
+            <h3><a href="https://github.com/JD-Gonz/urlShortener" target="_blank">URL Shortener</a></h3>
+          </header>
+          <p>Effortlessly shorten long URLs and optimize your online presence with this URL shortener.</p>
+        </article>
+
+        <article>
+          <a href="https://request-header-parser-ms.netlify.app/" target="_blank" class="image featured"><img
+              src="public/images/requestHeaderParser.jpg" alt="request header parser" /></a>
+          <header>
+            <h3><a href="https://github.com/JD-Gonz/headerParser" target="_blank">Request Header Parser</a></h3>
+          </header>
+          <p>Get key browser information at a glance with this convenient header parser microservice.</p>
+        </article>
+
+        <article>
+          <a href="https://time-stamp.netlify.app/" target="_blank" class="image featured"><img
+              src="public/images/Timestamp.jpg" alt="timestamp converter" /></a>
+          <header>
+            <h3><a href="https://github.com/JD-Gonz/timestampApi" target="_blank">Timestamp Converter</a></h3>
+          </header>
+          <p>Easily convert timestamps and natural language dates with our versatile Timestamp Microservice</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Main -->
+    <div class="wrapper style2">
+      <article id="main" class="container special">
+        <img class="image centered" src="public/images/mailboxPeak.jpg" alt="JD Gonzalez atop mailbox peak with dog" />
+        <header>
+          <h2>My Story</h2>
+          <p>
+            Driven software engineer based in Seattle with a passion for continuous learning and innovative
+            problem-solving.
+            Dedicated to collaborating with others to make a difference in the world.
+          </p>
+        </header>
+        <p>
+          My name is JD Gonzalez, and I am a software engineer based in the greater Seattle area.
+          I graduated from the University of Washington with a Bachelor's degree in Informatics from the Information
+          School in 2015.
+          Since then, I have been working professionally as a software engineer, gaining experience in a variety of
+          programming languages, platforms, and industries.
+          I am passionate about creating innovative solutions to complex problems and enjoy collaborating with others to
+          achieve shared goals.
+          In my free time, I enjoy exploring the beautiful Pacific Northwest, trying my hand at new hobbies, and
+          spending time with my family and friends.
+          Thank you for taking the time to learn a little bit more about me!
+        </p>
+      </article>
     </div>
-  
-    <a name="portfolio"></a>
-    <div class="container portfolio-container text-center">
-      <div ng-include src="'public/views/portfolio.html'" ng-controller="PortfolioCtrl"></div>
+
+    <!-- Features -->
+    <div class="wrapper style1">
+      <section id="features" class="container special">
+        <header>
+          <h2>Personal Highlights</h2>
+          <p>
+            In addition to my work as a software engineer, I am actively involved in a variety of activities that
+            reflect my values and passions. From donating blood to supporting my alma mater and participating in a
+            leadership and fitness group, I am dedicated to making a positive impact both in and outside of the
+            workplace.
+          </p>
+        </header>
+        <div class="row">
+          <article class="col-4 col-12-mobile special">
+            <a href="https://ischool.uw.edu/about/leadership/alumni-board" target="_blank" class="image featured"><img
+                src="public/images/iSchool.jpg" alt="iSchool logo" /></a>
+            <header>
+              <h3><a href="https://ischool.uw.edu/about/leadership/alumni-board" target="_blank">Board Member</a></h3>
+            </header>
+            <p>
+              As a member of the alumni advisory board for the Information School at the University of Washington, I
+              have the opportunity to provide feedback and support to current students, alumni, and faculty. I am
+              committed to
+              helping the next generation of informatics professionals achieve their goals and make an impact in their
+              field.
+            </p>
+          </article>
+          <article class="col-4 col-12-mobile special">
+            <a href="https://www.bloodworksnw.org/" target="_blank" class="image featured"><img
+                src="public/images/bloodworksNW.jpg" alt="BloodworksNW logo" /></a>
+            <header>
+              <h3><a href="https://www.bloodworksnw.org/" target="_blank">Blood Donor</a></h3>
+            </header>
+            <p>
+              I am a regular donor of both blood and platelets at Bloodworks Northwest, a nonprofit organization that
+              provides
+              life-saving blood components to hospitals in the Pacific Northwest. Donating blood is a small but
+              meaningful way that I can help those in need and give back to my community.
+            </p>
+          </article>
+          <article class="col-4 col-12-mobile special">
+            <a href="https://f3pugetsound.com/" target="_blank" class="image featured"><img src="public/images/f3.jpg"
+                alt="F3 logo" /></a>
+            <header>
+              <h3><a href="https://f3pugetsound.com/" target="_blank">Member of F3</a></h3>
+            </header>
+            <p>
+              I am a member of F3, a leadership and workout group for men that focuses on fitness, fellowship, and
+              faith. Through F3, I have been able to connect with others who share my passion for personal growth and
+              development, and I have learned valuable lessons about leadership, teamwork, and perseverance.
+            </p>
+          </article>
+        </div>
+      </section>
     </div>
-  
-    <a name="contact"></a>
-    <div class="container contact-container">
-      <div ng-include src="'public/views/contact.html'" ng-controller="ContactCtrl"></div>
+
+    <!-- Footer -->
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <!-- Contact -->
+            <section class="contact">
+              <header>
+                <h2>Contact Me</h2>
+              </header>
+              <p>Feel free to reach out to me via email or social media:</p>
+              <ul class="icons">
+                <li><a href="mailto:JD.Gonz@outlook.com" target="_blank" class="icon brands fa-internet-explorer"><span
+                      class="label">Email</span></a></li>
+                <li><a href="https://www.linkedin.com/in/jdannygonzalez/" target="_blank"
+                    class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+                <li><a href="https://github.com/JD-Gonz" target="_blank" class="icon brands fa-github"><span
+                      class="label">Github</span></a></li>
+              </ul>
+              <h3><a href="./public/JDGonzalez-Resume.pdf" download>Download My Resume</a></h3>
+            </section>
+
+            <!-- Copyright -->
+            <div class="copyright">
+              <ul class="menu">
+                <li>&copy; JD Gonzalez. All rights reserved.</li>
+                <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
-    
-    <!-- scripts -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="public/js/app.js"></script>
-  </body>  
+
+    <!-- Scripts -->
+    <script src="./public/js/jquery.min.js"></script>
+    <script src="./public/js/jquery.dropotron.min.js"></script>
+    <script src="./public/js/jquery.scrolly.min.js"></script>
+    <script src="./public/js/jquery.scrollex.min.js"></script>
+    <script src="./public/js/browser.min.js"></script>
+    <script src="./public/js/breakpoints.min.js"></script>
+    <script src="./public/js/util.js"></script>
+    <script src="./public/js/main.js"></script>
+</body>
+
 </html>
