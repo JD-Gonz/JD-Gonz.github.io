@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Container, Typography, Box, Grid, Card, CardContent, CardMedia, Button } from '@mui/material';
+import { Container, Typography, Box, Grid, Card, CardContent, CardMedia, Button, Avatar } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
 
 const Home = () => {
@@ -7,19 +7,19 @@ const Home = () => {
     {
       title: 'Pollapalooza',
       description: 'A user-friendly web app for creating, viewing, and voting on polls.',
-      image: '/public/images/pollapalooza.jpg',
+      image: '/images/pollapalooza.jpg',
       link: 'https://pollapalooza.netlify.app/',
     },
     {
       title: 'Markdown Previewer',
       description: 'Instant feedback with this real-time markdown previewer.',
-      image: '/public/images/markdown.jpg',
+      image: '/images/markdown.jpg',
       link: 'https://codepen.io/jdg99/full/yXmxKL',
     },
     {
       title: 'Simon Says',
       description: 'The classic memory game with a modern twist.',
-      image: '/public/images/simon.jpg',
+      image: '/images/simon.jpg',
       link: 'https://codepen.io/jdg99/full/BKeJvm/',
     },
   ];
