@@ -9,6 +9,7 @@ import {
   Drawer,
   List,
   ListItem,
+  ListItemButton,
   ListItemText,
   useMediaQuery,
   useTheme,
@@ -34,14 +35,14 @@ const Navbar = () => {
   const drawer = (
     <List>
       {menuItems.map((item) => (
-        <ListItem
-          button
-          component={RouterLink}
-          to={item.path}
-          key={item.text}
-          onClick={handleDrawerToggle}
-        >
-          <ListItemText primary={item.text} />
+        <ListItem key={item.text} disablePadding>
+          <ListItemButton
+            component={RouterLink}
+            to={item.path}
+            onClick={handleDrawerToggle}
+          >
+            <ListItemText primary={item.text} />
+          </ListItemButton>
         </ListItem>
       ))}
     </List>
