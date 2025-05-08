@@ -63,12 +63,12 @@ const Contact = () => {
     {
       icon: <LinkedInIcon />,
       label: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/jd-gonzalez/',
+      url: 'https://www.linkedin.com/in/jdannygonzalez/',
     },
     {
       icon: <EmailIcon />,
       label: 'Email',
-      url: 'mailto:your.email@example.com',
+      url: 'mailto:JD.Gonz@outlook.com',
     },
   ];
 
