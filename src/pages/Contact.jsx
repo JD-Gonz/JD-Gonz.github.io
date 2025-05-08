@@ -58,16 +58,19 @@ const Contact = () => {
       icon: <GitHubIcon />,
       label: 'GitHub',
       url: 'https://github.com/JD-Gonz',
+      description: 'Check out my code and projects on GitHub',
     },
     {
       icon: <LinkedInIcon />,
       label: 'LinkedIn',
       url: 'https://www.linkedin.com/in/jdannygonzalez/',
+      description: 'Connect with me professionally on LinkedIn',
     },
     {
       icon: <EmailIcon />,
       label: 'Email',
       url: 'mailto:JD.Gonz@outlook.com',
+      description: 'Send me an email at JD.Gonz@outlook.com',
     },
   ];
 
@@ -82,65 +85,19 @@ const Contact = () => {
           Get in Touch
         </Typography>
         <Typography variant="body1" color="text.secondary" align="center" sx={{ mb: 6 }}>
-          I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+          Feel free to connect with me through any of these platforms
         </Typography>
 
-        <Grid container spacing={4}>
-          <Grid item xs={12} md={6}>
-            <Paper elevation={3} sx={{ p: 4 }}>
-              <form onSubmit={handleSubmit}>
-                <TextField
-                  fullWidth
-                  label="Name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  margin="normal"
-                  required
-                />
-                <TextField
-                  fullWidth
-                  label="Email"
-                  name="email"
-                  type="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  margin="normal"
-                  required
-                />
-                <TextField
-                  fullWidth
-                  label="Message"
-                  name="message"
-                  multiline
-                  rows={4}
-                  value={formData.message}
-                  onChange={handleChange}
-                  margin="normal"
-                  required
-                />
-                <Button
-                  type="submit"
-                  variant="contained"
-                  size="large"
-                  fullWidth
-                  sx={{ mt: 2 }}
-                >
-                  Send Message
-                </Button>
-              </form>
-            </Paper>
-          </Grid>
-
+        <Grid container justifyContent="center">
           <Grid item xs={12} md={6}>
             <Paper elevation={3} sx={{ p: 4, height: '100%' }}>
-              <Typography variant="h5" component="h2" gutterBottom>
-                Connect with Me
-              </Typography>
-              <Typography variant="body1" paragraph>
-                Feel free to reach out through any of these platforms:
-              </Typography>
-              <Box sx={{ display: 'flex', gap: 2, mt: 3 }}>
+              <Box sx={{ 
+                display: 'flex', 
+                gap: 2, 
+                justifyContent: 'center',
+                alignItems: 'center',
+                flexWrap: 'wrap'
+              }}>
                 {socialLinks.map((link) => (
                   <IconButton
                     key={link.label}
