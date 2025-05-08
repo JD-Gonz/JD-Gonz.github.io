@@ -40,8 +40,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you would typically handle the form submission
-    // For now, we'll just show a success message
+    // TODO: Add service to send email
     setSnackbar({
       open: true,
       message: 'Thank you for your message! I will get back to you soon.',
