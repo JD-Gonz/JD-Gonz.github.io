@@ -50,19 +50,19 @@ const About = () => {
     {
       title: 'F3 Leader',
       description: 'I am one of the leaders of F3 Puget Sound, a leadership and workout group for men that focuses on fitness, fellowship, and faith. Through F3, I have been able to connect with others who share my passion for personal growth and development, and I have learned valuable lessons about leadership, teamwork, and perseverance.',
-      image: '/images/f3.jpg',
+      image: '/images/highlights/f3.jpg',
       link: 'https://f3pugetsound.com/',
     },
     {
       title: 'Board Member',
       description: 'As a member of the alumni advisory board for the Information School at the University of Washington, I have the opportunity to provide feedback and support to current students, alumni, and faculty. I am committed to helping the next generation of informatics professionals achieve their goals and make an impact in their field.',
-      image: '/images/iSchool.jpg',
+      image: '/images/highlights/iSchool.jpg',
       link: 'https://ischool.uw.edu/about/leadership/alumni-board',
     },
     {
       title: 'Blood Donor',
       description: 'I am a regular donor of both blood and platelets at Bloodworks Northwest, a nonprofit organization that provides life-saving blood components to hospitals in the Pacific Northwest. Donating blood is a small but meaningful way that I can help those in need and give back to my community.',
-      image: '/images/bloodworksNW.jpg',
+      image: '/images/highlights/bloodworksNW.jpg',
       link: 'https://www.bloodworksnw.org/',
     },
   ];
@@ -76,7 +76,7 @@ const About = () => {
       >
         <Box sx={{ textAlign: 'center', mb: 6 }}>
           <Avatar
-            src="/images/mailboxPeak.jpg"
+            src="/images/profile/mailboxPeak.jpg"
             alt="JD Gonzalez"
             sx={{
               width: 200,

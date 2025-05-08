@@ -7,19 +7,19 @@ const Home = () => {
     {
       title: 'Pollapalooza',
       description: 'A user-friendly web app for creating, viewing, and voting on polls.',
-      image: '/images/pollapalooza.jpg',
+      image: '/images/projects/pollapalooza.jpg',
       link: 'https://pollapalooza.netlify.app/',
     },
     {
       title: 'Markdown Previewer',
       description: 'Instant feedback with this real-time markdown previewer.',
-      image: '/images/markdown.jpg',
+      image: '/images/projects/markdown.jpg',
       link: 'https://codepen.io/jdg99/full/yXmxKL',
     },
     {
       title: 'Simon Says',
       description: 'The classic memory game with a modern twist.',
-      image: '/images/simon.jpg',
+      image: '/images/projects/simon.jpg',
       link: 'https://codepen.io/jdg99/full/BKeJvm/',
     },
   ];
@@ -117,6 +117,15 @@ const Home = () => {
           </Box>
         </Box>
       </motion.div>
+      <Avatar
+        src="/images/profile/mailboxPeak.jpg"
+        alt="JD Gonzalez"
+        sx={{
+          width: 100,
+          height: 100,
+          marginTop: 4,
+        }}
+      />
     </Container>
   );
 };
