@@ -33,16 +33,30 @@
   "contact": {
     "heading": "Contact Me",
     "links": [
-      { "label": "Email", "href": "mailto:JD.Gonz@outlook.com", "iconClass": "icon brands fa-internet-explorer" },
-      { "label": "Linkedin", "href": "https://www.linkedin.com/in/jdannygonzalez/", "iconClass": "icon brands fa-linkedin-in" },
-      { "label": "Github", "href": "https://github.com/JD-Gonz", "iconClass": "icon brands fa-github" }
+      {
+        "label": "Email",
+        "href": "mailto:JD.Gonz@outlook.com",
+        "iconClass": "icon brands fa-internet-explorer"
+      },
+      {
+        "label": "Linkedin",
+        "href": "https://www.linkedin.com/in/jdannygonzalez/",
+        "iconClass": "icon brands fa-linkedin-in"
+      },
+      {
+        "label": "Github",
+        "href": "https://github.com/JD-Gonz",
+        "iconClass": "icon brands fa-github"
+      }
     ],
-    "resume": { "label": "Download My Resume", "href": "./public/JDGonzalez-Resume.pdf" }
+    "resume": {
+      "label": "Download My Resume",
+      "href": "./public/JDGonzalez-Resume.pdf"
+    }
   },
   "copyright": {
     "itemsHtml": [
-      "&copy; JD Gonzalez. All rights reserved.",
-      "Design: <a href=\"http://html5up.net\" target=\"_blank\">HTML5 UP</a>"
+      "&copy; JD Gonzalez. All rights reserved."
     ]
   }
 }
