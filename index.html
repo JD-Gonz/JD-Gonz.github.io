@@ -1,4 +1,10 @@
 <!--
+  GENERATED FILE — DO NOT EDIT DIRECTLY.
+  Source template: src/index.template.html
+  Content data:    data/site.json, data/highlights.json, data/projects.json
+  Rebuild with:    npm run build
+-->
+<!--
  __      __          ___                                               
 /\ \  __/\ \        /\_ \                                              
 \ \ \/\ \ \ \     __\//\ \     ___    ___     ___ ___      __          
@@ -26,9 +32,13 @@
 <html>
 
 <head>
-  <title><!--@@META_TITLE@@--></title>
+  <title>JD Gonzalez</title>
   <meta charset="utf-8" />
-<!--@@META_OG@@-->
+  <meta property="og:title" content="JD Gonzalez">
+  <meta property="og:description" content="A portfolio website showcasing my skills and projects">
+  <meta property="og:image" content="https://jd-gonz.github.io/public/images/mailboxPeak.jpg">
+  <meta property="og:url" content="https://jd-gonz.github.io/">
+  <meta property="og:type" content="website">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="./public/css/main.css" />
   <noscript>
@@ -45,9 +55,9 @@
       <!-- Inner -->
       <div class="inner">
         <header>
-          <h1 id="logo"><!--@@HEADER_LOGO@@--></h1>
+          <h1 id="logo">JD Gonzalez</h1>
           <hr />
-          <p><!--@@HEADER_TAGLINE@@--></p>
+          <p>Continuous learner, problem-solver, leader </p>
         </header>
         <footer>
           <a href="#main" class="button circled scrolly">Explore</a>
@@ -67,12 +77,12 @@
     <!-- About Me -->
     <div class="wrapper style2">
       <article id="main" class="container special">
-        <img class="image centered" src="<!--@@ABOUT_IMAGE_SRC@@-->" alt="<!--@@ABOUT_IMAGE_ALT@@-->" />
+        <img class="image centered" src="public/images/mailboxPeak.jpg" alt="JD Gonzalez atop mailbox peak with dog" />
         <header>
-          <h2><!--@@ABOUT_HEADING@@--></h2>
-          <p><!--@@ABOUT_LEDE@@--></p>
+          <h2>My Story</h2>
+          <p>Experienced Technical Project Manager based in the greater Seattle area, leveraging over ten years of software engineering expertise to bridge technical and business needs. Passionate about leading teams, driving innovation, and fostering collaboration to create meaningful impact.</p>
         </header>
-        <p><!--@@ABOUT_BODY@@--></p>
+        <p>My name is JD Gonzalez, and I am a Technical Project Manager based in the greater Seattle area. I graduated from the University of Washington with a Bachelor&#39;s degree in Informatics from the Information School in 2015. With over ten years of experience, I started my career as a software engineer and have since grown into technical leadership roles, gaining deep expertise across various programming languages, platforms, and industries. I am skilled at creating original solutions to complex problems, leading technical initiatives, and mentoring teams to achieve shared goals. In my free time, I enjoy exploring the beautiful Pacific Northwest, trying my hand at new hobbies, and spending time with my family and friends. Thank you for taking the time to learn a little bit more about me!</p>
       </article>
     </div>
 
@@ -80,11 +90,40 @@
     <div class="wrapper style1">
       <section id="features" class="container special">
         <header>
-          <h2><!--@@HIGHLIGHTS_HEADING@@--></h2>
-          <p><!--@@HIGHLIGHTS_INTRO@@--></p>
+          <h2>Personal Highlights</h2>
+          <p>In addition to my work as a Technical Project Manager, I am actively involved in a variety of activities that reflect my values and interests. From donating blood to supporting my alma mater and leading a mens leadership and fitness group, I am dedicated to making a positive impact in all aspects of my life. I believe in creating a better world not just through my work but also by being an engaged and responsible member of my community.</p>
         </header>
         <div class="row">
-<!--@@HIGHLIGHTS@@-->
+          <article class="col-4 col-12-mobile special">
+            <a href="https://f3pugetsound.com/" target="_blank" class="image featured"><img
+                src="public/images/f3.jpg" alt="F3 logo" /></a>
+            <header>
+              <h3><a href="https://f3pugetsound.com/" target="_blank">Executive Director of F3 Cascades</a></h3>
+            </header>
+            <p>
+              I am the Executive Director (Nan&#39;Tan) of F3 Cascades region, a leadership and workout group for men. Through F3, I have been able to connect with other men who share my passion for personal growth and development, while leading and growing our community in the Pacific Northwest through servant leadership.
+            </p>
+          </article>
+          <article class="col-4 col-12-mobile special">
+            <a href="https://www.bloodworksnw.org/" target="_blank" class="image featured"><img
+                src="public/images/bloodworksNW.jpg" alt="BloodworksNW logo" /></a>
+            <header>
+              <h3><a href="https://www.bloodworksnw.org/" target="_blank">Blood Donor</a></h3>
+            </header>
+            <p>
+              I am a regular donor of both blood and platelets at Bloodworks Northwest, a nonprofit organization that provides life-saving blood components to hospitals in the Pacific Northwest. Donating blood is a small but meaningful way that I can help those in need and give back to my community.
+            </p>
+          </article>
+          <article class="col-4 col-12-mobile special">
+            <a href="https://ischool.uw.edu/about/leadership/alumni-board" target="_blank" class="image featured"><img
+                src="public/images/iSchool.jpg" alt="iSchool logo" /></a>
+            <header>
+              <h3><a href="https://ischool.uw.edu/about/leadership/alumni-board" target="_blank">Board Member</a></h3>
+            </header>
+            <p>
+              As a member of the alumni advisory board and mentor for the Information School at the University of Washington, I have the opportunity to provide feedback and support to current students, alumni, and faculty. Through both board service and one-on-one mentoring, I am committed to helping the next generation of informatics professionals achieve their goals and make an impact in their field.
+            </p>
+          </article>
         </div>
       </section>
     </div>
@@ -92,8 +131,8 @@
     <!-- portfolio highlights -->
     <section id="banner">
       <header>
-        <h2><strong><!--@@BANNER_HEADING@@--></strong></h2>
-        <p><!--@@BANNER_BODY@@--></p>
+        <h2><strong>Portfolio Highlights</strong></h2>
+        <p>This portfolio showcases some of my earlier side projects, which allowed me to develop my skills as a software engineer and experiment with new technologies. I have since gained valuable industry experience, including working on a modern insurance CRM at Liberty Mutual, contributing to Microsoft's <a href="https://dynamics.microsoft.com/en-us/field-service/overview/">Field Service</a> and <a href="https://www.microsoft.com/en-us/sustainability/cloud">Microsoft Cloud for Sustainability</a> solutions, and building an internal development portal and modernizing the Order Management System at Costco. <br>I hope you enjoy exploring this portfolio and seeing how I have leveraged my skills and experience to create innovative solutions.</p>
       </header>
     </section>
 
@@ -101,7 +140,149 @@
     <section class="carousel">
       <div class="reel">
 
-<!--@@PROJECTS@@-->
+        <article>
+          <a href="https://codepen.io/jdg99/full/yXmxKL" target="_blank" class="image featured"><img
+              src="public/images/markdown.jpg" alt="markdown previewer" /></a>
+          <header>
+            <h3><a href="https://codepen.io/jdg99/full/yXmxKL" target="_blank">Markdown Previewer</a></h3>
+          </header>
+          <p>Instant feedback with this real-time markdown previewer. Type, format, and repeat!</p>
+        </article>
+
+        <article>
+          <a href="https://codepen.io/jdg99/full/BKeJvm/" target="_blank" class="image featured"><img
+              src="public/images/simon.jpg" alt="siman says" /></a>
+          <header>
+            <h3><a href="https://codepen.io/jdg99/full/BKeJvm/" target="_blank">Simon Says</a></h3>
+          </header>
+          <p>Think you can keep up? Try your hand at Simon Says, the game that&#39;s easy to learn but hard to master.</p>
+        </article>
+
+        <article>
+          <a href="https://codepen.io/jdg99/full/MyZgMB/" target="_blank" class="image featured"><img
+              src="public/images/ticTacToe.jpg" alt="tic-tac-toe" /></a>
+          <header>
+            <h3><a href="https://codepen.io/jdg99/full/MyZgMB/" target="_blank">Tic-Tac-Toe</a></h3>
+          </header>
+          <p>Tic-tac-toe just got more interesting with this game that pits you against the computer.</p>
+        </article>
+
+        <article>
+          <a href="https://codepen.io/jdg99/full/NNYodV/" target="_blank" class="image featured"><img
+              src="public/images/pomodoro.jpg" alt="pomodoro clock" /></a>
+          <header>
+            <h3><a href="https://codepen.io/jdg99/full/NNYodV/" target="_blank">Pomodoro Clock</a></h3>
+          </header>
+          <p>A simple yet effective tool to help you manage your time and accomplish your tasks more efficiently.</p>
+        </article>
+
+        <article>
+          <a href="https://codepen.io/jdg99/full/aNYojq/" target="_blank" class="image featured"><img
+              src="public/images/calculator.jpg" alt="digital calculator" /></a>
+          <header>
+            <h3><a href="https://codepen.io/jdg99/full/aNYojq/" target="_blank">Digital Calculator</a></h3>
+          </header>
+          <p>Make quick work of complex calculations with this digital calculator that has all the features you need.</p>
+        </article>
+
+        <article>
+          <a href="https://codepen.io/jdg99/full/qZNmoG/" target="_blank" class="image featured"><img
+              src="public/images/wiki.jpg" alt="wikipedia viewer" /></a>
+          <header>
+            <h3><a href="https://codepen.io/jdg99/full/qZNmoG/" target="_blank">Wikipedia Viewer</a></h3>
+          </header>
+          <p>Find everything you need to know on Wikipedia with this fun to use and handy viewer tool.</p>
+        </article>
+
+        <article>
+          <a href="https://codepen.io/jdg99/full/oxbpJR/" target="_blank" class="image featured"><img
+              src="public/images/weather.jpg" alt="local weather app" /></a>
+          <header>
+            <h3><a href="https://codepen.io/jdg99/full/oxbpJR/" target="_blank">Local Weather</a></h3>
+          </header>
+          <p>Plan your day with confidence using this app that gives you the local weather forecast.</p>
+        </article>
+
+        <article>
+          <a href="https://codepen.io/jdg99/full/mPmeLN/" target="_blank" class="image featured"><img
+              src="public/images/twitch.jpg" alt="twitch streamer app" /></a>
+          <header>
+            <h3><a href="https://codepen.io/jdg99/full/mPmeLN/" target="_blank">Twitch Streamers</a></h3>
+          </header>
+          <p>The ultimate Twitch companion that keeps you updated on when your favorite streamers are live.</p>
+        </article>
+
+        <article>
+          <a href="https://codepen.io/jdg99/full/jqbOoV/" target="_blank" class="image featured"><img
+              src="public/images/randomQuote.jpg" alt="quote generator" /></a>
+          <header>
+            <h3><a href="https://codepen.io/jdg99/full/jqbOoV/" target="_blank">Quote Machine</a></h3>
+          </header>
+          <p>Expand your horizons with this app that provides a never-ending stream of thought-provoking quotes.</p>
+        </article>
+
+        <article>
+          <a href="https://codepen.io/jdg99/full/JGVjPR/" target="_blank" class="image featured"><img
+              src="public/images/tribute.jpg" alt="tribute page" /></a>
+          <header>
+            <h3><a href="https://codepen.io/jdg99/full/JGVjPR/" target="_blank">Tribute Project</a></h3>
+          </header>
+          <p>Celebrate the timeless wisdom of this classic book with a tribute page that highlights its lessons.</p>
+        </article>
+
+        <article>
+          <a href="https://pollapalooza.netlify.app/" target="_blank" class="image featured"><img
+              src="public/images/pollapalooza.jpg" alt="pollapalooza" /></a>
+          <header>
+            <h3><a href="https://github.com/JD-Gonz/votingApp" target="_blank">Pollapalooza</a></h3>
+          </header>
+          <p>Engage with your community with this user-friendly web app for creating, viewing, and voting on polls.</p>
+        </article>
+
+        <article>
+          <a href="https://github.com/JD-Gonz/fileMetadata" target="_blank" class="image featured"><img
+              src="public/images/fileMetadata.jpg" alt="file metadata microservice" /></a>
+          <header>
+            <h3><a href="https://github.com/JD-Gonz/fileMetadata" target="_blank">File Metadata</a></h3>
+          </header>
+          <p>Effortlessly obtain valuable information about your files using this convenient microservice.</p>
+        </article>
+
+        <article>
+          <a href="https://github.com/JD-Gonz/imageSearch" target="_blank" class="image featured"><img
+              src="public/images/imageSearch.jpg" alt="image search abstraction layer" /></a>
+          <header>
+            <h3><a href="https://github.com/JD-Gonz/imageSearch" target="_blank">Image Search</a></h3>
+          </header>
+          <p>Streamline your searches and deliver results quickly and effortlessly with this abstraction layer.</p>
+        </article>
+
+        <article>
+          <a href="https://github.com/JD-Gonz/urlShortener" target="_blank" class="image featured"><img
+              src="public/images/urlShortener.jpg" alt="url shortener" /></a>
+          <header>
+            <h3><a href="https://github.com/JD-Gonz/urlShortener" target="_blank">URL Shortener</a></h3>
+          </header>
+          <p>Effortlessly shorten long URLs and optimize your online presence with this URL shortener.</p>
+        </article>
+
+        <article>
+          <a href="https://github.com/JD-Gonz/headerParser" target="_blank" class="image featured"><img
+              src="public/images/requestHeaderParser.jpg" alt="request header parser" /></a>
+          <header>
+            <h3><a href="https://github.com/JD-Gonz/headerParser" target="_blank">Request Header Parser</a></h3>
+          </header>
+          <p>Get key browser information at a glance with this convenient header parser microservice.</p>
+        </article>
+
+        <article>
+          <a href="https://github.com/JD-Gonz/timestampApi" target="_blank" class="image featured"><img
+              src="public/images/Timestamp.jpg" alt="timestamp converter" /></a>
+          <header>
+            <h3><a href="https://github.com/JD-Gonz/timestampApi" target="_blank">Timestamp Converter</a></h3>
+          </header>
+          <p>Easily convert timestamps and natural language dates with our versatile Timestamp Microservice</p>
+        </article>
 
       </div>
     </section>
@@ -114,18 +295,20 @@
             <!-- Contact -->
             <section class="contact">
               <header>
-                <h2><!--@@CONTACT_HEADING@@--></h2>
+                <h2>Contact Me</h2>
               </header>
               <ul class="icons">
-<!--@@CONTACT_LINKS@@-->
+                <li><a href="mailto:JD.Gonz@outlook.com" target="_blank" class="icon brands fa-internet-explorer"><span class="label">Email</span></a></li>
+                <li><a href="https://www.linkedin.com/in/jdannygonzalez/" target="_blank" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+                <li><a href="https://github.com/JD-Gonz" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
               </ul>
-              <h3><a href="<!--@@CONTACT_RESUME_HREF@@-->" download><!--@@CONTACT_RESUME_LABEL@@--></a></h3>
+              <h3><a href="./public/JDGonzalez-Resume.pdf" download>Download My Resume</a></h3>
             </section>
 
             <!-- Copyright -->
             <div class="copyright">
               <ul class="menu">
-<!--@@COPYRIGHT_ITEMS@@-->
+                <li>&copy; JD Gonzalez. All rights reserved.</li>
               </ul>
             </div>
           </div>

@@ -1,7 +1,17 @@
 {
-    "watch": [
-      "index.html",
-      "public"
-    ],
-    "ext": "js js json css html"
-  }
+  "watch": [
+    "src",
+    "data",
+    "routes",
+    "lib",
+    "app.js",
+    "server.js"
+  ],
+  "ext": "js,json,html",
+  "ignore": [
+    "index.html",
+    "public/**",
+    "test/**",
+    "node_modules/**"
+  ]
+}
