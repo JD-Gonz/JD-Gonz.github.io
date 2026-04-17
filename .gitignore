@@ -1,1 +1,5 @@
 node_modules
+
+# GitHub Pages artifact staging directory (created by the CI workflow, but
+# may also appear locally if someone simulates the CI steps). Never commit.
+_site/

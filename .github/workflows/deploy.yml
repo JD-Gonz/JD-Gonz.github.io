@@ -1,0 +1,93 @@
+# .github/workflows/deploy.yml
+# Builds the static site from src/ + data/ and deploys it to GitHub Pages
+# via the official actions/deploy-pages action. Nothing is committed back
+# to the repo — the artifact is uploaded directly to Pages infrastructure.
+#
+# Prerequisite (one-time): in the repo's
+#   Settings → Pages → Build and deployment → Source
+# choose "GitHub Actions". Without that, this workflow has nowhere to deploy.
+
+name: Deploy site to GitHub Pages
+
+on:
+  push:
+    branches: [master]
+  # Allow manual reruns from the Actions tab.
+  workflow_dispatch:
+
+# Minimum permissions for the Pages deploy. No contents:write needed because
+# we never push anything back to the repo.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Official GitHub recommendation: only one Pages deploy in flight at a time,
+# but don't cancel an in-progress deploy if a new push arrives — wait for it.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Tests gate the deploy — a failing test will abort this job and
+      # the deploy job will not run, so broken builds never publish.
+      - name: Run tests
+        env:
+          NODE_ENV: test
+        run: npm test
+
+      - name: Build static index.html
+        env:
+          NODE_ENV: production
+        run: npm run build
+
+      # Assemble the exact set of files GitHub Pages should serve. Anything
+      # not copied here (server.js, lib/, routes/, test/, src/, data/, …)
+      # stays out of the published site.
+      - name: Stage site for Pages
+        run: |
+          set -euo pipefail
+          rm -rf _site
+          mkdir -p _site
+          cp index.html _site/
+          cp -R public _site/public
+          # .nojekyll tells Pages "serve this verbatim, don't run Jekyll
+          # over it." Optional under the Actions deploy path, but harmless
+          # and makes the intent explicit.
+          touch _site/.nojekyll
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    name: Deploy to Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy artifact
+        id: deployment
+        uses: actions/deploy-pages@v4
