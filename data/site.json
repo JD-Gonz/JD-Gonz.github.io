@@ -1,4 +1,14 @@
 {
+  "meta": {
+    "title": "JD Gonzalez",
+    "og": {
+      "title": "JD Gonzalez",
+      "description": "A portfolio website showcasing my skills and projects",
+      "image": "https://jd-gonz.github.io/public/images/mailboxPeak.jpg",
+      "url": "https://jd-gonz.github.io/",
+      "type": "website"
+    }
+  },
   "header": {
     "logo": "JD Gonzalez",
     "tagline": "Continuous learner, problem-solver, leader "
@@ -30,7 +40,7 @@
     "resume": { "label": "Download My Resume", "href": "./public/JDGonzalez-Resume.pdf" }
   },
   "copyright": {
-    "items": [
+    "itemsHtml": [
       "&copy; JD Gonzalez. All rights reserved.",
       "Design: <a href=\"http://html5up.net\" target=\"_blank\">HTML5 UP</a>"
     ]
