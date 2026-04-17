@@ -1,25 +1,13 @@
 // routes/api.js
-// Exposes portfolio content as JSON so front-end changes become data edits in /data/*.json.
-// Adds a tiny in-memory cache plus CDN-friendly Cache-Control headers.
+// JSON endpoints backed by /data/*.json. Thin wrapper around lib/content.js
+// so both the API and the HTML renderer share one cache.
 
 'use strict';
 
 const express = require('express');
-const path = require('path');
-const fs = require('fs').promises;
+const { loadJson, clearCache } = require('../lib/content');
 
 const router = express.Router();
-const DATA_DIR = path.join(__dirname, '..', 'data');
-
-const cache = new Map();
-
-async function loadJson(name) {
-  if (cache.has(name)) return cache.get(name);
-  const filePath = path.join(DATA_DIR, `${name}.json`);
-  const payload = JSON.parse(await fs.readFile(filePath, 'utf8'));
-  cache.set(name, payload);
-  return payload;
-}
 
 // Route factory collapses per-route try/catch boilerplate.
 const jsonRoute = (name) => async (req, res, next) => {
@@ -35,9 +23,11 @@ router.get('/site', jsonRoute('site'));
 router.get('/highlights', jsonRoute('highlights'));
 router.get('/projects', jsonRoute('projects'));
 
-// Exposed for tests / admin tooling to drop the cache without a restart.
+// Drops the shared data + rendered-template cache without a restart.
 router.post('/_cache/clear', (req, res) => {
-  cache.clear();
+  clearCache();
+  // render cache lives in lib/render.js and listens for this hook
+  try { require('../lib/render').clearTemplateCache(); } catch (_) { /* optional */ }
   res.json({ ok: true });
 });
 

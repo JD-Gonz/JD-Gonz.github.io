@@ -1,14 +1,22 @@
 (function ($) {
+  'use strict';
+
+  // Bail out gracefully if jQuery or breakpoints aren't present (e.g.
+  // automated Lighthouse runs with third-party scripts blocked). This
+  // keeps the static HTML usable instead of throwing in the console.
+  if (typeof $ !== 'function' || typeof breakpoints !== 'function') {
+    return;
+  }
+
   var $window = $(window),
     $body = $('body'),
     settings = {
-
       // Carousels
       carousels: {
         speed: 4,
         fadeIn: true,
         fadeDelay: 250
-      },
+      }
     };
 
   // Breakpoints.
