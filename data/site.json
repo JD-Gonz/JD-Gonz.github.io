@@ -1,0 +1,38 @@
+{
+  "header": {
+    "logo": "JD Gonzalez",
+    "tagline": "Continuous learner, problem-solver, leader "
+  },
+  "about": {
+    "heading": "My Story",
+    "image": {
+      "src": "public/images/mailboxPeak.jpg",
+      "alt": "JD Gonzalez atop mailbox peak with dog"
+    },
+    "lede": "Experienced Technical Project Manager based in the greater Seattle area, leveraging over ten years of software engineering expertise to bridge technical and business needs. Passionate about leading teams, driving innovation, and fostering collaboration to create meaningful impact.",
+    "body": "My name is JD Gonzalez, and I am a Technical Project Manager based in the greater Seattle area. I graduated from the University of Washington with a Bachelor's degree in Informatics from the Information School in 2015. With over ten years of experience, I started my career as a software engineer and have since grown into technical leadership roles, gaining deep expertise across various programming languages, platforms, and industries. I am skilled at creating original solutions to complex problems, leading technical initiatives, and mentoring teams to achieve shared goals. In my free time, I enjoy exploring the beautiful Pacific Northwest, trying my hand at new hobbies, and spending time with my family and friends. Thank you for taking the time to learn a little bit more about me!"
+  },
+  "highlightsIntro": {
+    "heading": "Personal Highlights",
+    "body": "In addition to my work as a Technical Project Manager, I am actively involved in a variety of activities that reflect my values and interests. From donating blood to supporting my alma mater and leading a mens leadership and fitness group, I am dedicated to making a positive impact in all aspects of my life. I believe in creating a better world not just through my work but also by being an engaged and responsible member of my community."
+  },
+  "banner": {
+    "heading": "Portfolio Highlights",
+    "bodyHtml": "This portfolio showcases some of my earlier side projects, which allowed me to develop my skills as a software engineer and experiment with new technologies. I have since gained valuable industry experience, including working on a modern insurance CRM at Liberty Mutual, contributing to Microsoft's <a href=\"https://dynamics.microsoft.com/en-us/field-service/overview/\">Field Service</a> and <a href=\"https://www.microsoft.com/en-us/sustainability/cloud\">Microsoft Cloud for Sustainability</a> solutions, and building an internal development portal and modernizing the Order Management System at Costco. <br>I hope you enjoy exploring this portfolio and seeing how I have leveraged my skills and experience to create innovative solutions."
+  },
+  "contact": {
+    "heading": "Contact Me",
+    "links": [
+      { "label": "Email", "href": "mailto:JD.Gonz@outlook.com", "iconClass": "icon brands fa-internet-explorer" },
+      { "label": "Linkedin", "href": "https://www.linkedin.com/in/jdannygonzalez/", "iconClass": "icon brands fa-linkedin-in" },
+      { "label": "Github", "href": "https://github.com/JD-Gonz", "iconClass": "icon brands fa-github" }
+    ],
+    "resume": { "label": "Download My Resume", "href": "./public/JDGonzalez-Resume.pdf" }
+  },
+  "copyright": {
+    "items": [
+      "&copy; JD Gonzalez. All rights reserved.",
+      "Design: <a href=\"http://html5up.net\" target=\"_blank\">HTML5 UP</a>"
+    ]
+  }
+}

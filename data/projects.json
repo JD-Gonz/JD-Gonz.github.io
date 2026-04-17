@@ -1,0 +1,115 @@
+[
+  {
+    "title": "Markdown Previewer",
+    "href": "https://codepen.io/jdg99/full/yXmxKL",
+    "image": "public/images/markdown.jpg",
+    "alt": "markdown previewer",
+    "description": "Instant feedback with this real-time markdown previewer. Type, format, and repeat!"
+  },
+  {
+    "title": "Simon Says",
+    "href": "https://codepen.io/jdg99/full/BKeJvm/",
+    "image": "public/images/simon.jpg",
+    "alt": "siman says",
+    "description": "Think you can keep up? Try your hand at Simon Says, the game that's easy to learn but hard to master."
+  },
+  {
+    "title": "Tic-Tac-Toe",
+    "href": "https://codepen.io/jdg99/full/MyZgMB/",
+    "image": "public/images/ticTacToe.jpg",
+    "alt": "tic-tac-toe",
+    "description": "Tic-tac-toe just got more interesting with this game that pits you against the computer."
+  },
+  {
+    "title": "Pomodoro Clock",
+    "href": "https://codepen.io/jdg99/full/NNYodV/",
+    "image": "public/images/pomodoro.jpg",
+    "alt": "pomodoro clock",
+    "description": "A simple yet effective tool to help you manage your time and accomplish your tasks more efficiently."
+  },
+  {
+    "title": "Digital Calculator",
+    "href": "https://codepen.io/jdg99/full/aNYojq/",
+    "image": "public/images/calculator.jpg",
+    "alt": "digital calculator",
+    "description": "Make quick work of complex calculations with this digital calculator that has all the features you need."
+  },
+  {
+    "title": "Wikipedia Viewer",
+    "href": "https://codepen.io/jdg99/full/qZNmoG/",
+    "image": "public/images/wiki.jpg",
+    "alt": "wikipedia viewer",
+    "description": "Find everything you need to know on Wikipedia with this fun to use and handy viewer tool."
+  },
+  {
+    "title": "Local Weather",
+    "href": "https://codepen.io/jdg99/full/oxbpJR/",
+    "image": "public/images/weather.jpg",
+    "alt": "local weather app",
+    "description": "Plan your day with confidence using this app that gives you the local weather forecast."
+  },
+  {
+    "title": "Twitch Streamers",
+    "href": "https://codepen.io/jdg99/full/mPmeLN/",
+    "image": "public/images/twitch.jpg",
+    "alt": "twitch streamer app",
+    "description": "The ultimate Twitch companion that keeps you updated on when your favorite streamers are live."
+  },
+  {
+    "title": "Quote Machine",
+    "href": "https://codepen.io/jdg99/full/jqbOoV/",
+    "image": "public/images/randomQuote.jpg",
+    "alt": "quote generator",
+    "description": "Expand your horizons with this app that provides a never-ending stream of thought-provoking quotes."
+  },
+  {
+    "title": "Tribute Project",
+    "href": "https://codepen.io/jdg99/full/JGVjPR/",
+    "image": "public/images/tribute.jpg",
+    "alt": "tribute page",
+    "description": "Celebrate the timeless wisdom of this classic book with a tribute page that highlights its lessons."
+  },
+  {
+    "title": "Pollapalooza",
+    "imageHref": "https://pollapalooza.netlify.app/",
+    "href": "https://github.com/JD-Gonz/votingApp",
+    "image": "public/images/pollapalooza.jpg",
+    "alt": "pollapalooza",
+    "description": "Engage with your community with this user-friendly web app for creating, viewing, and voting on polls."
+  },
+  {
+    "title": "File Metadata",
+    "href": "https://github.com/JD-Gonz/fileMetadata",
+    "image": "public/images/fileMetadata.jpg",
+    "alt": "file metadata microservice",
+    "description": "Effortlessly obtain valuable information about your files using this convenient microservice."
+  },
+  {
+    "title": "Image Search",
+    "href": "https://github.com/JD-Gonz/imageSearch",
+    "image": "public/images/imageSearch.jpg",
+    "alt": "image search abstraction layer",
+    "description": "Streamline your searches and deliver results quickly and effortlessly with this abstraction layer."
+  },
+  {
+    "title": "URL Shortener",
+    "href": "https://github.com/JD-Gonz/urlShortener",
+    "image": "public/images/urlShortener.jpg",
+    "alt": "url shortener",
+    "description": "Effortlessly shorten long URLs and optimize your online presence with this URL shortener."
+  },
+  {
+    "title": "Request Header Parser",
+    "href": "https://github.com/JD-Gonz/headerParser",
+    "image": "public/images/requestHeaderParser.jpg",
+    "alt": "request header parser",
+    "description": "Get key browser information at a glance with this convenient header parser microservice."
+  },
+  {
+    "title": "Timestamp Converter",
+    "href": "https://github.com/JD-Gonz/timestampApi",
+    "image": "public/images/Timestamp.jpg",
+    "alt": "timestamp converter",
+    "description": "Easily convert timestamps and natural language dates with our versatile Timestamp Microservice"
+  }
+]

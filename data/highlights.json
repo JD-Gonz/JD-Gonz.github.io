@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Board Member",
+    "href": "https://ischool.uw.edu/about/leadership/alumni-board",
+    "image": "public/images/iSchool.jpg",
+    "alt": "iSchool logo",
+    "description": "As a member of the alumni advisory board and mentor for the Information School at the University of Washington, I have the opportunity to provide feedback and support to current students, alumni, and faculty. Through both board service and one-on-one mentoring, I am committed to helping the next generation of informatics professionals achieve their goals and make an impact in their field."
+  },
+  {
+    "title": "Blood Donor",
+    "href": "https://www.bloodworksnw.org/",
+    "image": "public/images/bloodworksNW.jpg",
+    "alt": "BloodworksNW logo",
+    "description": "I am a regular donor of both blood and platelets at Bloodworks Northwest, a nonprofit organization that provides life-saving blood components to hospitals in the Pacific Northwest. Donating blood is a small but meaningful way that I can help those in need and give back to my community."
+  },
+  {
+    "title": "Member of F3",
+    "href": "https://f3pugetsound.com/",
+    "image": "public/images/f3.jpg",
+    "alt": "F3 logo",
+    "description": "I am the regional Nan-Tan (president) of F3, a leadership and workout group for men. Through F3, I have been able to connect with other men who share my passion for personal growth and development, while leading and growing our community in the Pacific Northwest region through servant leadership."
+  }
+]
