@@ -7,13 +7,11 @@ The site is a **static HTML page**, but content is driven by JSON files and the 
 ## How it's wired
 
 ```text
-┌────────────────┐    ┌───────────────────────┐    ┌──────────────┐
-│ data/*.json    │ ─► │ scripts/build.js      │ ─► │ index.html   │
-│ + src/index.   │    │   (uses lib/render.js)│    │ (artifact,   │
-│   template.html│    │                       │    │  committed,  │
-└────────────────┘    └───────────────────────┘    │  GH-Pages-   │
-                                                    │  served)     │
-                                                    └──────────────┘
+┌────────────────┐    ┌───────────────────────┐    ┌─────────────────────────┐
+│ data/*.json    │ ─► │ scripts/build.js      │ ─► │ index.html (local + CI; │
+│ + src/index.   │    │   (uses lib/render.js)│    │ not committed)          │
+│   template.html│    │                       │    └─────────────────────────┘
+└────────────────┘    └───────────────────────┘
 ```
 
 There is also an Express server (`server.js` + `app.js`) that reads the same template and data at runtime. Use it for local preview and for the backend JSON API. **It is not used in production** — GitHub Pages serves `index.html` directly.
@@ -22,7 +20,7 @@ There is also an Express server (`server.js` + `app.js`) that reads the same tem
 
 ```text
 .
-├── index.html                 # GENERATED ARTIFACT — do not edit directly
+├── index.html                 # GENERATED — `npm run build` (not in git)
 ├── src/
 │   └── index.template.html    # source template with @@TOKEN@@ comments
 ├── data/
@@ -47,7 +45,7 @@ There is also an Express server (`server.js` + `app.js`) that reads the same tem
 
 ## Updating site content
 
-Edit JSON, run the build, commit.
+Edit JSON, commit, and push — CI runs `npm run build` before deploy. Optionally run `npm run build` locally to refresh `./index.html`.
 
 | Section                                   | Edit                                 |
 | ----------------------------------------- | ------------------------------------ |
@@ -65,13 +63,13 @@ Edit JSON, run the build, commit.
 ```bash
 npm install
 # edit data/*.json …
-npm run build     # regenerates ./index.html (recommended but optional)
-git add data/ index.html
+npm run build     # optional locally — writes ./index.html for static preview
+git add data/
 git commit -m "content: update projects list"
 git push
 ```
 
-`npm run build` before committing is recommended so the `index.html` in the repo stays in sync with the source data (nice for reviewers and for a correct render on `github.com`). Even if you skip it, CI rebuilds the site from scratch before deploying, so the **deployed** Pages site is always current.
+`index.html` is listed in `.gitignore` because CI always runs `npm run build` before deploy, so the live site never depends on a committed copy. Run `npm run build` locally when you want `./index.html` on disk (for opening the file directly or for sanity-checking a render before push).
 
 ### Conventions
 
@@ -83,10 +81,11 @@ git push
 
 ```bash
 npm install
+npm run build     # optional: materialize ./index.html for static file preview
 npm run dev       # nodemon; http://localhost:8080
 ```
 
-Edits to `src/`, `data/`, `lib/`, `routes/`, `app.js`, or `server.js` trigger a nodemon restart. Edits to `data/*.json` alone are picked up live without a restart (a `fs.watch` in `lib/content.js` drops the in-memory caches).
+The dev server renders from `src/index.template.html` and does not require `./index.html` to exist. Edits to `src/`, `data/`, `lib/`, `routes/`, `app.js`, or `server.js` trigger a nodemon restart. Edits to `data/*.json` alone are picked up live without a restart (a `fs.watch` in `lib/content.js` drops the in-memory caches).
 
 The Express server also exposes the JSON API — useful for building alternative clients or debugging.
 
@@ -106,7 +105,7 @@ npm test
 
 ## Production (GitHub Pages)
 
-The site is deployed by the **GitHub Actions** Pages source, not from a branch root. Every push to `master` runs tests, rebuilds the static site, and uploads it as a Pages artifact — nothing is committed back to the repo.
+The site is deployed by the **GitHub Actions** Pages source, not from a branch root. Every push to `master` or `main` runs tests, rebuilds the static site, and uploads it as a Pages artifact — nothing is committed back to the repo.
 
 ### One-time setup
 
@@ -118,7 +117,7 @@ That is the only change required in the GitHub UI. The workflow file (`.github/w
 
 ### CI workflow — `.github/workflows/deploy.yml`
 
-Triggers on push to `master` and on manual `workflow_dispatch`. Two jobs:
+Triggers on push to `master` or `main` and on manual `workflow_dispatch`. Two jobs:
 
 1. **`build`**
    - Checks out the repo, installs Node 20, runs `npm ci`.
